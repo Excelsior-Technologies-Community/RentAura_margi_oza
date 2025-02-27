@@ -1,0 +1,145 @@
+header, .nav-btn button, .buy, .search-column1-btn button, .experience {
+    background-color: #0E694B;
+}
+
+header{
+    position: fixed;
+    /* top: 0; */
+    /* left: 0; */
+    width: 100%;
+    z-index: 1000;
+    /* background-color: white; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 10%;
+}
+
+.nav-logo {
+    width: 10%;
+}
+
+.menu ul li a, .menu ul li button, .home-head p{
+    color: #666666;
+    font-family: 'Lufga Regular';
+}
+
+.nav-btn button{
+    border-radius: 30px;
+    width: 120px;
+}
+
+.home {
+    margin-top: 10%;
+    gap: 10%;
+}
+
+.home-head, .home-img{
+    margin-top: 70px;
+}
+
+.home-head{
+    width: 50%;
+}
+.abc
+.home-head h1 a, .home-head p a{
+    color: #0E694B;
+}
+
+.home-head h1{
+    font-size: 58px;
+    font-family: 'Lufga Bold';
+    line-height: 1.2;
+}
+
+.home-head p{
+    line-height: 2;
+}
+
+.search{
+    background-color: #FAFAFA;
+    border-radius: 20px;
+    font-family: 'Lufga Regular';
+}
+
+.home-btn, .top-property-detail{
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.home-btn button, .search-column1-btn button, .top-listing-head button{
+    width: 120px;
+    /* background: none; */
+}
+
+.home-btn button:hover{
+    background-color: #0E694B;
+    color: white;
+}
+
+.buy{
+    border-top-left-radius: 20px;
+}
+
+.rent{
+    background-color: #FAFAFA;
+}
+
+.com-btn{
+    border-top-right-radius: 20px;
+}
+
+.search-column h6{
+    margin-bottom: -0rem;
+}
+
+.search-column button, .searchbar i, .searchbar input{
+    color: #B8B8B8;
+}
+
+.search-column1{
+    border-left: 1px solid #d3d3d3;
+}
+
+.search-column1-btn {
+    margin-top: 50px;
+    font-family: 'Lufga Regular';
+}
+
+.search-column1-btn button{
+    border-radius: 13px;
+}
+
+.home-img{
+    width: 40%;
+}
+
+.home-img img{
+    width: 100%;
+}
+
+.experience{
+    margin-top: 70px;
+    border-radius: 10px;
+    font-family: 'Lufga Regular';
+}
+
+.top-listing{
+    margin-top: 70px;
+}
+
+.top-listing-head button{
+    border-radius: 10px;
+}
+
+.top-head{
+    top: 15px;
+    left: 15px;
+    border-radius: 20px;
+    width: 100px;
+    text-align: center;
+}
+
+.top-head p, .top-listing-location p{
+    margin-bottom: -0rem;
+}
