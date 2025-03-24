@@ -1,4 +1,4 @@
-header, .nav-btn button, .buy, .search-column1-btn button, .experience {
+header, .nav-btn button, .buy, .search-column1-btn button, .experience, .professional-head button, .property-head button, footer, .signin-btn button {
     background-color: #0E694B;
 }
 
@@ -17,10 +17,11 @@ header{
 }
 
 .nav-logo {
-    width: 10%;
+    width: 100%;
 }
 
-.menu ul li a, .menu ul li button, .home-head p{
+.menu ul li a, .menu ul li button, .home-head p, .top-property p, .professional-head p, .professional-card-item p, .professional-card-item p a, .professional-txt p, .property-head p, .review-head p, .review-card p, .question-detail p,
+.question-list span, .blog-head p, .blog-date h6, .blog-card p, .signin-txt p, .signin-contact p, .signin-option p, .email-txt p{
     color: #666666;
     font-family: 'Lufga Regular';
 }
@@ -28,6 +29,117 @@ header{
 .nav-btn button{
     border-radius: 30px;
     width: 120px;
+}
+
+.menubar-btn button {
+    display: none;
+}
+
+@media (max-width: 991px) and (min-width: 320px) {
+    header{
+        width: 100%;
+    }
+
+    .menu, .nav-right-btn button {
+        display: none; 
+    }
+
+    .menubar-btn button {
+        display: block;
+    }
+
+    .logo2{
+        width: 100%;
+    }
+
+    .navbar-logo{
+        width: 100%;
+    }
+
+    .nav-logo{
+        width: 15%;
+        padding: 10px;
+    }
+
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-head{
+        width: 100%;
+    }
+
+    .property-img, .question-img1, .question-img1 img{
+        width: 100%;
+    }
+
+    .property-head{
+        margin-top: 50px;
+    }
+
+    .review-head, .home-search{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .review-txt{
+        width: 100%;
+        margin-top: 20px;
+        line-height: 1.8;
+    }
+
+    .review-item{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .client, .question-detail{
+        margin-top: 20px;
+    }
+
+    .question-img{
+        display: none;
+    }
+
+    .footer-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-txt{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.form{
+    padding: 70px;
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    margin-top: -10px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    /* border: 1px solid red; */
+}
+
+.signin-contact input, .password{
+    border: 1px solid #d3d3d3;
+}
+
+.reset-head h1{
+    font-size: 46px;
+}
+
+.email-txt p{
+    font-size: 14px;
 }
 
 .home {
@@ -39,15 +151,12 @@ header{
     margin-top: 70px;
 }
 
-.home-head{
-    width: 50%;
-}
-.abc
-.home-head h1 a, .home-head p a{
+.home-head h1 a, .home-head p a, .top-property-price h2 a, .professional-head h1 a, .property-head p a, .review-head p a, .review-card p a, .question-box h6, .blog-card button,
+.signin-txt p a, .forgot-password a{
     color: #0E694B;
 }
 
-.home-head h1{
+.home-head h1, .property-head h1{
     font-size: 58px;
     font-family: 'Lufga Bold';
     line-height: 1.2;
@@ -106,12 +215,13 @@ header{
     font-family: 'Lufga Regular';
 }
 
-.search-column1-btn button{
+.search-column1-btn button, .professional-head button, .property-head button{
     border-radius: 13px;
 }
 
 .home-img{
-    width: 40%;
+    width: 100%;
+    /* margin-left: 120px; */
 }
 
 .home-img img{
@@ -128,7 +238,20 @@ header{
     margin-top: 70px;
 }
 
-.top-listing-head button{
+.top-listing-head h2{
+    font-size: 42px;
+}
+
+.top-property-img, .top-property-img img{
+    width: 100%;
+}
+
+.top-listing-head h2, .top-property-name h4, .top-property-price h2, .professional-card-item h5, .professional-txt button, .review-head h1, .client h6, .question-detail h1,
+.blog-card h4, .footer-column-list h6, .footer-column h6, .signin-txt p a, .forgot-password a{
+    font-family: 'Lufga SemiBold';
+}
+
+.top-listing-head button, .signin-contact input, .password, .signin-btn button{
     border-radius: 10px;
 }
 
@@ -140,6 +263,190 @@ header{
     text-align: center;
 }
 
-.top-head p, .top-listing-location p{
+.top-property-detail, .top-listing-location, .top-head, .top-listing-head button, .professional-head button, .question-box h6, .question-list button, .signin-btn button, .offcanvas{
+    font-family: 'Lufga Regular';
+}
+
+.top-head p, .top-listing-location p, .signin-contact p{
     margin-bottom: -0rem;
+}
+
+.top-head p{
+    font-size: 12px;
+}
+
+.popular, .professional, .find-property, .review, .question, .blog, footer{
+    margin-top: 100px;
+}
+
+.popular-head h1, .professional-head h1, .blog-head h1, .signin-head{
+    font-family: 'Lufga Bold';
+}
+
+.popular-head h1{
+    font-size: 52px;
+}
+
+.popular-img-txt{
+    top: 30px;
+    left: 31%;
+    font-family: 'Lufga SemiBold';
+}
+
+.popular-img-txt1{
+    top: 30px;
+    left: 23%;
+    font-family: 'Lufga SemiBold';
+}
+
+.popular-img-txt2{
+    top: 30px;
+    left: 28%;
+    font-family: 'Lufga SemiBold';
+}
+
+.n-btn button{
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+.n-btn button:hover{
+    background-color: #0E694B;
+    color: white;
+}
+
+.professional-head p{
+    width: 70%;
+    line-height: 1.8;
+}
+
+.professional-head h1, .review-head h1{
+    font-size: 46px;
+}
+
+.professional-head button{
+    width: 300px;
+}
+
+.professional-card{
+    width: 40%;
+    margin-left: 52%;
+    top: 10%;
+    /* position: relative; */
+    border-radius: 10px;
+}
+
+.professional-card-item p, .property-head p, .review-card p, .question-detail p, .blog-card p, .footer-txt p{
+    line-height: 1.8;
+}
+
+.professional-txt p{
+    font-size: 16px;
+    width: 70%;
+}
+
+.professional-txt button, .property-head button{
+    border-radius: 10px;
+    width: 180px;
+}
+
+.view-listing{
+    margin-top: 100px;
+}
+
+@media (min-width:991px) {
+    .review-txt{
+        width: 40%;
+    }
+
+    .property-img{
+        width: 80%;
+    }
+
+    .review-item{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.review-card{
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+}
+
+.review-card p, .review-card h6, .blog-date h6, footer p{
+    margin-bottom: -0rem;
+}
+
+.question-img{
+    top: 47%;
+    left: 45%;
+}
+
+/* .question-detail{
+    width: 50%;
+} */
+
+.question-list{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.question-list button i{
+    color: #666666;
+}
+
+.blog-head p{
+    width: 40%;
+    line-height: 1.8;
+}
+
+.blog-card h4{
+    line-height: 1.5;
+    /* width: 90%; */
+}
+
+.blog-card button{
+    font-size: 18px;
+}
+
+.blog-card img{
+    width: 100%;
+}
+
+footer{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.footer-item{
+    padding-top: 70px;
+    gap: 70px;
+    border-bottom: 1px solid #949494;
+}
+
+.footer-column-list ul li, .footer-column-list p, .footer-txt p, .footer-txt h6{
+    font-size: 14px;
+}
+
+@media (min-width:991px) {
+    .footer-column{
+        width: 50%;
+    }
+}
+
+.footer-column-list p{
+    width: 70%;
+    line-height: 1.8;
+}
+
+.footer-txt p{
+    width: 85%;
+}
+
+.footer-column p,
+.footer-column-list ul li, .footer-txt p, .footer-txt h6{
+    font-family: 'Lufga Light';
 }

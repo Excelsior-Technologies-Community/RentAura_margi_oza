@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="listingdetails.css">
+        <link rel="stylesheet" href="./Fonts/style.css" />
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-CDN.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <title>RentAura Property Search | Online Property Search Website</title>
+    </head>
+
+    <body>
+        <header class="pt-2 fixed-top">
+            <div class="d-flex align-items-center justify-content-between ps-4 pe-4">
+                <div class="logo"><img src="Images/Logo.png" class="w-100"></div>
+                <div><h4 class="text-white text-uppercase">Details Listing</h4></div>
+            </div>
+
+            <nav>
+                <div class="w-100 bg-white d-flex align-items-center gap-5 pe-4 ps-4">
+                    <!-- <div class="nav-logo"><img src="Images/Logo2.png" class="w-100"></div> -->
+
+                    <div class="d-flex align-items-center justify-content-between navbar-logo">
+                        <div class="nav-logo"><img src="Images/Logo2.png" class="w-100"></div>
+                        <div class="menubar-btn">
+                            <button class="bg-transparent border-0" data-bs-toggle="offcanvas" data-bs-target="#menuModal"><i class="fa-solid fa-bars"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="menu w-100 mt-3">
+                        <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
+                            <li class="me-2"><a href="home.html" class="text-decoration-none">Home</a></li>
+                            <li class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Buy</button>
+                            </li>
+    
+                            <li class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rent</button>
+                            </li>
+    
+                            <li class="dropdown">
+                                <button class="btn dropdown-toggle" id="dropdownMenuButton" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Commercial</button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="demographics.html">Demographics</a>
+                                </div>
+                            </li>
+    
+                            <li class="dropdown me-2">
+                                <button class="btn dropdown-toggle" id="dropdownMenuButton" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="news.html">News & Insights</a>
+                                    <a class="dropdown-item" href="agent.html">Agents/Brokers</a>
+                                </div>
+                            </li>
+    
+                            <li class="me-3"><a href="about.html" class="text-decoration-none">About</a></li>
+    
+                            <li><a href="contact.html" class="text-decoration-none">Contact Us</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="d-flex align-items-center gap-2 nav-right-btn">
+                        <div class="dropdown global">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="Images/global.png" class="me-2">EN</button>
+                        </div>
+    
+                        <div class="nav-btn">
+                            <button class="border-0 text-white p-2">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="offcanvas offcanvas-end" id="menuModal">
+            <div class="offcanvas-header">
+                <button type="button" class="close font-size-16 bg-transparent border-0" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="offcanvas-body">
+                <div class="mt-4">
+                    <div class="d-flex align-items-center mt-3 gap-3">
+                        <div class="d-flex justify-content-between align-items-center w-100 wishlist-list">
+                            <a href="home.html" class="text-decoration-none text-dark">Home</a>
+                        </div>
+                    </div>      
+
+                    <div class="d-flex align-items-center mt-3 gap-3">
+                        <div class="d-flex justify-content-between align-items-center w-100 wishlist-list">
+                            <a href="#" class="text-decoration-none text-dark">Buy</a>
+                            
+                            <button class="border-0 bg-transparent"><h3 class="ms-2">+</h3></button>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mt-3 gap-3">
+                        <div class="d-flex justify-content-between align-items-center w-100 wishlist-list">
+                            <a href="#" class="text-decoration-none text-dark">Rent</a>
+                            
+                            <button class="border-0 bg-transparent"><h3 class="ms-2">+</h3></button>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mt-3 gap-3">
+                        <div class="d-flex justify-content-between align-items-center w-100 wishlist-list">
+                            <a href="#" class="text-decoration-none text-dark">Commercial</a>
+                            
+                            <button class="border-0 bg-transparent"><h3 class="ms-2">+</h3></button>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mt-3 gap-3">
+                        <div class="d-flex justify-content-between align-items-center w-100 wishlist-list">
+                            <a href="#" class="text-decoration-none text-dark">Resources</a>
+                            
+                            <button class="border-0 bg-transparent"><h3 class="ms-2">+</h3></button>
+                        </div>
+                    </div>
+
+                    <div class="mt-3">
+                        <a href="about.html" class="text-decoration-none text-dark">About</a>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="contact.html" class="text-decoration-none text-dark">Contact us</a>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-2 mt-4">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="Images/global.png" class="me-2">EN</button>
+                        </div>
+    
+                        <div class="nav-btn">
+                            <button class="border-0 text-white p-2" data-toggle="modal" data-target="#signinModal">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="home">
+                <div class="d-flex">
+                    <div class="home-nav"><a href="home.html" class="text-decoration-none text-dark">Home</a></div>
+                    <div class="home-nav">
+                        <ul class="d-flex gap-4">
+                            <li class="text-dark">Canada</li>
+                            <li>Downtown</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="d-flex mt-5 justify-content-between listing-details-head">
+                    <div><h1>Title of the listing will come here</h1></div>
+                    <div class="d-flex gap-4">
+                        <div class="d-flex">
+                            <button class="bg-transparent border-0">Share <img src="Images/logout.png" class="ms-1"></button>
+                        </div>
+
+                        <div><img src="Images/heart.png"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-9 mt-4">
+                        <div>
+                            <div class="position-relative"><img src="Images/Video.png" class="w-100">
+                                <div class="position-absolute play-btn">
+                                    <button class="border-0 bg-transparent text-danger"><i class="fa-solid fa-circle-play"></i></button>
+                                </div>
+
+                                <div class="position-absolute bg-danger p-1 top-head">
+                                    <p class="text-white">Gold Listing</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 mt-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <div><img src="Images/DL-2.png" class="w-100"></div>
+                            </div>
+
+                            <div class="col-12 mt-4">
+                                <div>
+                                    <div class="position-relative"><img src="Images/DL-3.png" class="w-100">
+                                        <div class="position-absolute show-btn">
+                                            <button class="p-1 text-dark">Show all photos</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex mt-3 justify-content-between listing-name">
+                    <div class="mt-3 top-property-price">
+                        <h2>$581,339.00 <a href="#" class="text-decoration-none">USD</a></h2>
+                        <div class="d-flex gap-2 align-items-center">
+                            <h5>$3,982 <a href="#" class="text-decoration-none">USD</a></h5>
+                            <div class="property-link mb-1"><a href="#">Get Mortgage</a></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <div class="d-flex gap-2 property-location">
+                            <div class="text-danger"><i class="fa-solid fa-location-dot"></i></div>
+                            <div><p>Mars Street, Indonesia</p></div>
+                        </div>
+
+                        <div class="d-flex mt-4 property-item">
+                            <div class="d-flex gap-2 align-items-center property-location">
+                                <div class="text-danger"><i class="fa-solid fa-table-cells-large"></i></div>
+                                <div><p>1,800 Sq Ft</p></div>
+                            </div>
+
+                            <div class="d-flex gap-2 align-items-center property-location">
+                                <div class="text-danger"><i class="fa-solid fa-bed"></i></div>
+                                <div><p>2 Bedroom</p></div>
+                            </div>
+
+                            <div class="d-flex gap-2 align-items-center property-location">
+                                <div><img src="Images/bathtub.svg"></div>
+                                <div><p>3 Bathroom</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="visit-btn mt-5"><button class="border-0 text-white p-2">Request Visit Now!</button></div>
+
+                <div class="mt-5">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div>
+                                <div>
+                                    <div class="property-discription-head"><h1>Property description</h1></div>
+
+                                    <div class="property-discription-column mt-4">
+                                        <div class="property-discription-column-title pb-4"><h5>Proprty summary for (property name)</h5></div>
+                                        
+                                        <div class="mt-5">
+                                            <div class="row">
+                                                <div class="col-lg-6 mt-3">
+                                                    <div class="d-flex justify-content-between w-100 property-summary">
+                                                        <div><h5>Type</h5></div>
+                                                        <div><p>Residential</p></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6 mt-3">
+                                                    <div class="d-flex justify-content-between w-100 property-summary">
+                                                        <div><h5>Taxes</h5></div>
+                                                        <div><p>$325,872 CAD</p></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6 mt-3">
+                                                    <div class="d-flex justify-content-between w-100 property-summary">
+                                                        <div><h5>Style</h5></div>
+                                                        <div><p>2 Story</p></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6 mt-3">
+                                                    <div class="d-flex justify-content-between w-100 property-summary">
+                                                        <div><h5>Neighborhood</h5></div>
+                                                        <div><p>Bendale</p></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6 mt-3">
+                                                    <div class="d-flex justify-content-between w-100 property-summary">
+                                                        <div><h5>Lot info</h5></div>
+                                                        <div><p>403.25ftx658.4ft</p></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6 mt-3">
+                                                    <div class="d-flex justify-content-between w-100 property-summary">
+                                                        <div><h5>Postal code</h5></div>
+                                                        <div><p>MP1 3S3</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="row mt-3">
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <div class="d-flex justify-content-between property-summary">
+                                                        <div><h5>Basement</h5></div>
+                                                        <div><p>Full Furnished basement</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4">
+                                    <div class="property-discription-column-title pb-4"><h5>Description</h5></div>
+                                    <div class="mt-4 description">
+                                        <p>Detached Homes and Townhouses in GT region provides residents with the perfect blend of both natural and urban amenities. With quick and convenient access to the GO Station, Big Box Stores, Highways 401 & 407, District Hospital, Rattlesnake Point Conservation Area and so much more.</p>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4">
+                                    <div class="property-discription-column-title pb-4"><h5>Price history</h5></div>
+                                    <div class="mt-5">
+                                        <div class="d-flex justify-content-between w-100 property-summary">
+                                            <div><h5>{date}</h5></div>
+                                            <div><p>$325,872 CAD</p></div>
+                                        </div>
+                
+                                        <div class="d-flex justify-content-between w-100 mt-3 property-summary">
+                                            <div><h5>{date}</h5></div>
+                                            <div><p>$125,872 CAD</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4">
+                                    <div class="property-discription-column-title pb-4"><h5>Population</h5></div>
+                                    <div class="mt-5">
+                                        <div class="d-flex justify-content-between w-100 property-summary">
+                                            <div><h5>Male population</h5></div>
+                                            <div><p>2,794,435</p></div>
+                                        </div>
+                
+                                        <div class="d-flex justify-content-between w-100 mt-3 property-summary">
+                                            <div><h5>Female Population</h5></div>
+                                            <div><p>2,794,435</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4">
+                                    <div class="property-discription-column-title pb-4"><h5>Other demographics</h5></div>
+                                    <div class="mt-4 row">
+                                        <div class="col-lg-3">
+                                            <div>
+                                                <div class="d-flex gap-2 demographics">
+                                                    <div><img src="Images/check_circle.svg"></div>
+                                                    <div><h5>Backyard</h5></div>
+                                                </div>
+                
+                                                <div class="d-flex mt-3 gap-2 demographics">
+                                                    <div><img src="Images/check_circle.svg"></div>
+                                                    <div><h5>Garage</h5></div>
+                                                </div>
+                                                
+                                                <div class="d-flex mt-3 gap-2 demographics">
+                                                    <div><img src="Images/check_circle.svg"></div>
+                                                    <div><h5>Outdoor Kitchen</h5></div>
+                                                </div>
+                
+                                                <div class="d-flex mt-3 gap-2 demographics">
+                                                    <div><img src="Images/check_circle.svg"></div>
+                                                    <div><h5>Storage Units</h5></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-lg-3">
+                                            <div>
+                                                <div class="d-flex gap-2 demographics">
+                                                    <div><img src="Images/check_circle.svg"></div>
+                                                    <div><h5>Pet Friendly</h5></div>
+                                                </div>
+                
+                                                <div class="d-flex mt-3 gap-2 demographics">
+                                                    <div><img src="Images/check_circle.svg"></div>
+                                                    <div><h5>Laundry</h5></div>
+                                                </div>
+                                                
+                                                <div class="d-flex mt-3 gap-2 demographics">
+                                                    <div><img src="Images/check_circle.svg"></div>
+                                                    <div><h5>Family Room</h5></div>
+                                                </div>
+                
+                                                <div class="d-flex mt-3 gap-2 demographics">
+                                                    <div><img src="Images/check_circle.svg"></div>
+                                                    <div><h5>Wi-fi</h5></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-lg-3">
+                                            <div>
+                                                <div class="d-flex gap-2 demographics">
+                                                    <div><img src="Images/check_circle.svg"></div>
+                                                    <div><h5>Balcony</h5></div>
+                                                </div>
+                
+                                                <div class="d-flex mt-3 gap-2 demographics">
+                                                    <div><img src="Images/check_circle.svg"></div>
+                                                    <div><h5>Fitness Center</h5></div>
+                                                </div>
+                                                
+                                                <div class="d-flex mt-3 gap-2 demographics">
+                                                    <div><img src="Images/check_circle.svg"></div>
+                                                    <div><h5>Barbeque</h5></div>
+                                                </div>
+                
+                                                <div class="d-flex mt-3 gap-2 demographics">
+                                                    <div><img src="Images/check_circle.svg"></div>
+                                                    <div><h5>Sauna</h5></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-lg-3">
+                                            <div>
+                                                <div class="d-flex gap-2 demographics">
+                                                    <div><img src="Images/check_circle.svg"></div>
+                                                    <div><h5>Swimming Pool</h5></div>
+                                                </div>
+                
+                                                <div class="d-flex mt-3 gap-2 demographics">
+                                                    <div><img src="Images/check_circle.svg"></div>
+                                                    <div><h5>Studio</h5></div>
+                                                </div>
+                                                
+                                                <div class="d-flex mt-3 gap-2 demographics">
+                                                    <div><img src="Images/check_circle.svg"></div>
+                                                    <div><h5>Soccer Feild</h5></div>
+                                                </div>
+                
+                                                <div class="d-flex mt-3 gap-2 demographics">
+                                                    <div><img src="Images/check_circle.svg"></div>
+                                                    <div><h5>Gym</h5></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="details-link text-center mt-4"><p>Is this home right up your alley? <a href="#">Get all the details now.</a></p></div>
+                                </div>
+
+                                <div class="property-discription pb-5">
+                                    <div class="ps-4 pe-4">
+                                        <div class="property-discription-head pt-5">
+                                            <h1 class="text-white">Getting around Bay Street Corridor, Torronto, ON</h1>
+                                            <p class="text-white mt-4">The area around Bay Street Corridor, Torronto, ON is by far a walker's paradise. With all services and amenities nearby, you really don't need a car to run your errands.
+                                                Regarding transit, there are first-class public transportation options you can take advantage of. Bay Street Corridor, Toronto, ON is in a very bikeable community, so you'll have a developed cycling infrastructure at your disposal.
+                                            </p>
+                                            <p class="text-white">Powered by <a href="#" class="text-white">Walk Score</a></p>
+                                        </div>
+                        
+                                        <div class="property-discription-block mt-5">
+                                            <div class="d-flex flex-column property-block-column p-5">
+                                                <div class="d-flex gap-3 property-block">
+                                                    <div><img src="Images/Circular Progress indicator-1.svg"></div>
+                                                    <div>
+                                                        <h4>Walker's Paradise</h4>
+                                                        <p class="mt-2">Walk Score <i class="fa-regular fa-registered"></i></p>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="d-flex gap-3 property-block block-2">
+                                                    <div><img src="Images/Circular Progress indicator-2.svg"></div>
+                                                    <div>
+                                                        <h4>Rider's Paradise</h4>
+                                                        <p class="mt-2">Transit Score <i class="fa-regular fa-registered"></i></p>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="d-flex gap-3 property-block block-3">
+                                                    <div><img src="Images/Circular Progress indicator-3.svg"></div>
+                                                    <div>
+                                                        <h4>Very Bikeable</h4>
+                                                        <p class="mt-2">Bike Score <i class="fa-regular fa-registered"></i></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="rates">
+                                    <div class="rates-head">
+                                        <h1>5-year fixed mortage rates</h1>
+                                        <p class="mt-2"><a href="#" class="text-decoration-none">Mortage rate comparison</a> for 253 Birkdale Rd</p>
+                                    </div>
+                        
+                                    <div class="rates-item p-5">
+                                        <div class="row">
+                                            <div class="col-lg-9">
+                                                <div>
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="bg-white p-3 rates-list">
+                                                                <h6>Transaction type</h6>
+                                                                <div class="dropdown">
+                                                                    <button class="btn dropdown-toggle">Buying a home</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                        
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="bg-white p-3 rates-list">
+                                                                <h6>Rate type</h6>
+                                                                <div class="dropdown">
+                                                                    <button class="btn dropdown-toggle">Fixed</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                        
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="bg-white p-3 rates-list">
+                                                                <h6>Purchaserd price</h6>
+                                                                <div class="mt-2"><h5>$800,00</h5></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                        
+                                                    <div class="row mt-4 col-sm-6">
+                                                        <div class="col-lg-3">
+                                                            <div class="bg-white p-3 rates-list">
+                                                                <h6>Down Payment</h6>
+                                                                <div class="mt-2"><h5>$120,000</h5></div>
+                                                            </div>
+                                                        </div>
+                        
+                                                        <div class="col-lg-3 col-sm-6">
+                                                            <div class="bg-white p-3 rates-list">
+                                                                <h6>%</h6>
+                                                                <div class="mt-2"><h5>15</h5></div>
+                                                            </div>
+                                                        </div>
+                        
+                                                        <div class="col-lg-3 col-sm-6">
+                                                            <div class="bg-white p-3 rates-list">
+                                                                <h6>Rate term</h6>
+                                                                <div class="dropdown">
+                                                                    <button class="btn dropdown-toggle">5-year</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                        
+                                                        <div class="col-lg-3 col-sm-6">
+                                                            <div class="bg-white p-3 rates-list">
+                                                                <h6>Location</h6>
+                                                                <div class="mt-2"><h5>Toronto, ON</h5></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                        
+                                                    <div class="row mt-4">
+                                                        <div class="col-lg-4">
+                                                            <div class="bg-white p-3 rates-list">
+                                                                <h6>Amortization</h6>
+                                                                <div class="dropdown">
+                                                                    <button class="btn dropdown-toggle">25-year</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                        
+                                                        <div class="col-lg-4">
+                                                            <div class="bg-white p-3 rates-list">
+                                                                <h6>Occupancy</h6>
+                                                                <div class="dropdown">
+                                                                    <button class="btn dropdown-toggle">Owner-occupied</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                        
+                                                        <div class="col-lg-4">
+                                                            <div class="bg-white p-3 rates-list">
+                                                                <h6>Payment frequency</h6>
+                                                                <div class="dropdown">
+                                                                    <button class="btn dropdown-toggle">Monthly</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="col-lg-3">
+                                                <div class="more-btn"><button class="bg-transparent border-0"><img src="Images/setting-4.png" class="me-2 mb-1"> More</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-5">
+                                    <table class="table table-responsive">
+                                        <thead>
+                                            <tr>
+                                                <th>Rate</th>
+                                                <th>Provider</th>
+                                                <th>Payment</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                        
+                                        <tbody>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p>Featured</p>
+                                                    <h3 class="mt-3">4.7%</h3>
+                                                </td>
+                        
+                                                <td>
+                                                    <div class="d-flex align-items-center text-center gap-3">
+                                                        <div><img src="Images/Avatar.png" class="w-100"></div>
+                                                        <div><h5>Big 6 Bank</h5></div>
+                                                    </div>
+                                                </td>
+                        
+                                                <td><h4>$3,982/mo</h4></td>
+                        
+                                                <td><button class="border-0 text-white p-3 inquire-btn">Inquire</button></td>
+                                            </tr>
+                        
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p>Featured</p>
+                                                    <h3 class="mt-3">4.7%</h3>
+                                                </td>
+                        
+                                                <td>
+                                                    <div class="d-flex align-items-center text-center gap-3">
+                                                        <div><img src="Images/Tab-2.png" class="w-100"></div>
+                                                        <div><h5>Canadian Lender</h5></div>
+                                                    </div>
+                                                </td>
+                        
+                                                <td><h4>$3,982/mo</h4></td>
+                        
+                                                <td><button class="border-0 text-white p-3 inquire-btn">Inquire</button></td>
+                                            </tr>
+                        
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p>Featured</p>
+                                                    <h3 class="mt-3">4.7%</h3>
+                                                </td>
+                        
+                                                <td>
+                                                    <div class="d-flex align-items-center text-center gap-3">
+                                                        <div><img src="Images/Tab-3.png" class="w-100"></div>
+                                                        <div><h5>RBC Royal Bank</h5></div>
+                                                    </div>
+                                                </td>
+                        
+                                                <td><h4>$3,982/mo</h4></td>
+                        
+                                                <td><button class="border-0 text-white p-3 inquire-btn">Inquire</button></td>
+                                            </tr>
+                        
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p>Featured</p>
+                                                    <h3 class="mt-3">4.7%</h3>
+                                                </td>
+                        
+                                                <td>
+                                                    <div class="d-flex align-items-center text-center gap-3">
+                                                        <div><img src="Images/Tab-4.png" class="w-100"></div>
+                                                        <div><h5>Meridian Credit Union</h5></div>
+                                                    </div>
+                                                </td>
+                        
+                                                <td><h4>$3,982/mo</h4></td>
+                        
+                                                <td><button class="border-0 text-white p-3 inquire-btn">Inquire</button></td>
+                                            </tr>
+                        
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p>Featured</p>
+                                                    <h3 class="mt-3">4.7%</h3>
+                                                </td>
+                        
+                                                <td>
+                                                    <div class="d-flex align-items-center text-center gap-3">
+                                                        <div><img src="Images/Tab-5.png" class="w-100"></div>
+                                                        <div><h5>Alterna Savings</h5></div>
+                                                    </div>
+                                                </td>
+                        
+                                                <td><h4>$3,982/mo</h4></td>
+                        
+                                                <td><button class="border-0 text-white p-3 inquire-btn">Inquire</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                        
+                                    <div class="show-btn mt-4 d-flex justify-content-center"><button class=" bg-transparent border-0">Show more <i class="fa-solid fa-chevron-down ms-2"></i></button></div>
+                                    <div class="ratehub mt-4 d-flex justify-content-end"><p>Powered by <a href="#" class="text-decoration-none">ratehub.ca</a></p></div>
+                                </div>
+
+                                <div class="listing-details-location">
+                                    <div class="listing-details-location-head">
+                                        <h1>Location</h1>
+                                        <p class="mt-3">Location for Detached Homes and Townhouses in GTA Region ON</p>
+                                    </div>
+                        
+                                    <div class="mt-4 w-100 position-relative"><img src="Images/Maps.svg" class="w-100">
+                                        <div class="position-absolute d-flex gap-3 align-items-center location-btn">
+                                            <div class="d-flex gap-3">
+                                                <div class="dropdown">
+                                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Schools</button>
+                                                </div>
+                            
+                                                <div class="dropdown">
+                                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Transportation</button>
+                                                </div>
+                            
+                                                <div class="dropdown">
+                                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Grocery Stores</button>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="d-flex gap-3">
+                                                <div class="dropdown">
+                                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shopping</button>
+                                                </div>
+                            
+                                                <div class="dropdown">
+                                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Food & Drink</button>
+                                                </div>
+                            
+                                                <div class="dropdown">
+                                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Worship</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="interest">
+                                    <div class="interest-head">
+                                        <h1>Point of interest</h1>
+                                        <p>Points of interest for 253 Birkdale Rd</p>
+                                    </div>
+                        
+                                    <div class="mt-5">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Location</th>
+                                                    <th>Name</th>
+                                                    <th>Distance</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                        
+                                            <tbody>
+                                                <tr class="align-middle">
+                                                    <td class="d-flex gap-3 pt-3 pb-3">
+                                                        <div><img src="Images/teacher.png"></div>
+                                                        <div><p>School</p></div>
+                                                    </td>
+                        
+                                                    <td class="pt-3 pb-3"><p>Edgewood Public School</p></td>
+                        
+                                                    <td><p>0.1 miles</p></td>
+                        
+                                                    <td>
+                                                        <button class="border-0 bg-transparent down-btn"><i class="fa-solid fa-chevron-up"></i></button>
+                                                    </td>
+                                                </tr>
+                        
+                                                <tr class="align-middle">
+                                                    <!-- <td class="d-flex gap-3 pt-3 pb-3">
+                                                        <div><img src="Images/teacher.png"></div>
+                                                        <div><p>School</p></div>
+                                                    </td> -->
+                        
+                                                    <td></td>
+                        
+                                                    <td  class="pt-3 pb-3"><p>Annamalai University</p></td>
+                        
+                                                    <td><p>0.2 miles</p></td>
+                        
+                                                    <td>
+                                                        <!-- <button class="border-0 bg-transparent down-btn"><i class="fa-solid fa-chevron-up"></i></button> -->
+                                                    </td>
+                                                </tr>
+                        
+                                                <tr class="align-middle">
+                                                    <!-- <td class="d-flex gap-3 pt-3 pb-3">
+                                                        <div><img src="Images/teacher.png"></div>
+                                                        <div><p>School</p></div>
+                                                    </td> -->
+                        
+                                                    <td></td>
+                        
+                                                    <td class="pt-3 pb-3"><p>St. Victor Catholic School</p></td>
+                        
+                                                    <td><p>0.4 miles</p></td>
+                        
+                                                    <td>
+                                                        <!-- <button class="border-0 bg-transparent down-btn"><i class="fa-solid fa-chevron-up"></i></button> -->
+                                                    </td>
+                                                </tr>
+                        
+                                                <tr class="align-middle">
+                                                    <!-- <td class="d-flex gap-3 pt-3 pb-3">
+                                                        <div><img src="Images/teacher.png"></div>
+                                                        <div><p>School</p></div>
+                                                    </td> -->
+                        
+                                                    <td></td>
+                        
+                                                    <td class="pt-3 pb-3"><p>Worksafe Forklift</p></td>
+                        
+                                                    <td><p>0.5 miles</p></td>
+                        
+                                                    <td>
+                                                        <!-- <button class="border-0 bg-transparent down-btn"><i class="fa-solid fa-chevron-up"></i></button> -->
+                                                    </td>
+                                                </tr>
+                        
+                                                <tr class="align-middle">
+                                                    <!-- <td class="d-flex gap-3 pt-3 pb-3">
+                                                        <div><img src="Images/teacher.png"></div>
+                                                        <div><p>School</p></div>
+                                                    </td> -->
+                        
+                                                    <td></td>
+                        
+                                                    <td class="pt-3 pb-3"><p>St. Andrews Public School</p></td>
+                        
+                                                    <td><p>0.5 miles</p></td>
+                        
+                                                    <td>
+                                                        <!-- <button class="border-0 bg-transparent down-btn"><i class="fa-solid fa-chevron-up"></i></button> -->
+                                                    </td>
+                                                </tr>
+                        
+                                                <tr class="align-middle">
+                                                    <td class="d-flex gap-3 pt-3 pb-3">
+                                                        <div><img src="Images/bus.png"></div>
+                                                        <div><p>Bus & Train Lines</p></div>
+                                                    </td>
+                        
+                                                    <td class="pt-3 pb-3"><p>Edgewood Public School</p></td>
+                        
+                                                    <td><p>0.1 miles</p></td>
+                        
+                                                    <td>
+                                                        <button class="border-0 bg-transparent down-btn"><i class="fa-solid fa-chevron-down"></i></button>
+                                                    </td>
+                                                </tr>
+                        
+                                                <tr class="align-middle">
+                                                    <td class="d-flex gap-3 pt-3 pb-3">
+                                                        <div><img src="Images/airplane.png"></div>
+                                                        <div><p>Airports</p></div>
+                                                    </td>
+                        
+                                                    <td class="pt-3 pb-3"><p>Edgewood Public School</p></td>
+                        
+                                                    <td><p>0.1 miles</p></td>
+                        
+                                                    <td>
+                                                        <button class="border-0 bg-transparent down-btn"><i class="fa-solid fa-chevron-down"></i></button>
+                                                    </td>
+                                                </tr>
+                        
+                                                <tr class="align-middle">
+                                                    <td class="d-flex gap-3 pt-3 pb-3">
+                                                        <div><img src="Images/shopping-cart.png"></div>
+                                                        <div><p>Grocery Stores</p></div>
+                                                    </td>
+                        
+                                                    <td class="pt-3 pb-3"><p>Edgewood Public School</p></td>
+                        
+                                                    <td><p>0.1 miles</p></td>
+                        
+                                                    <td>
+                                                        <button class="border-0 bg-transparent down-btn"><i class="fa-solid fa-chevron-down"></i></button>
+                                                    </td>
+                                                </tr>
+                        
+                                                <tr class="align-middle">
+                                                    <td class="d-flex gap-3 pt-3 pb-3">
+                                                        <div><img src="Images/bag.png"></div>
+                                                        <div><p>Shopping</p></div>
+                                                    </td>
+                        
+                                                    <td class="pt-3 pb-3"><p>Edgewood Public School</p></td>
+                        
+                                                    <td><p>0.1 miles</p></td>
+                        
+                                                    <td>
+                                                        <button class="border-0 bg-transparent down-btn"><i class="fa-solid fa-chevron-down"></i></button>
+                                                    </td>
+                                                </tr>
+                        
+                                                <tr class="align-middle">
+                                                    <td class="d-flex gap-3 pt-3 pb-3">
+                                                        <div><img src="Images/health.png"></div>
+                                                        <div><p>Healthcare</p></div>
+                                                    </td>
+                        
+                                                    <td class="pt-3 pb-3"><p>Edgewood Public School</p></td>
+                        
+                                                    <td><p>0.1 miles</p></td>
+                        
+                                                    <td>
+                                                        <button class="border-0 bg-transparent down-btn"><i class="fa-solid fa-chevron-down"></i></button>
+                                                    </td>
+                                                </tr>
+                        
+                                                <tr class="align-middle">
+                                                    <td class="d-flex gap-3 pt-3 pb-3">
+                                                        <div><img src="Images/educare-(ekt).png"></div>
+                                                        <div><p>Personal care</p></div>
+                                                    </td>
+                        
+                                                    <td class="pt-3 pb-3"><p>Edgewood Public School</p></td>
+                        
+                                                    <td><p>0.1 miles</p></td>
+                        
+                                                    <td>
+                                                        <button class="border-0 bg-transparent down-btn"><i class="fa-solid fa-chevron-down"></i></i></button>
+                                                    </td>
+                                                </tr>
+                        
+                                                <tr class="align-middle">
+                                                    <td class="d-flex gap-3 pt-3 pb-3">
+                                                        <div><img src="Images/gameboy.png"></div>
+                                                        <div><p>Sports & Recreation</p></div>
+                                                    </td>
+                        
+                                                    <td class="pt-3 pb-3"><p>Edgewood Public School</p></td>
+                        
+                                                    <td><p>0.1 miles</p></td>
+                        
+                                                    <td>
+                                                        <button class="border-0 bg-transparent down-btn"><i class="fa-solid fa-chevron-down"></i></button>
+                                                    </td>
+                                                </tr>
+                        
+                                                <tr class="align-middle">
+                                                    <td class="d-flex gap-3 pt-3 pb-3">
+                                                        <div><img src="Images/smileys.png"></div>
+                                                        <div><p>Entertainment</p></div>
+                                                    </td>
+                        
+                                                    <td class="pt-3 pb-3"><p>Edgewood Public School</p></td>
+                        
+                                                    <td><p>0.1 miles</p></td>
+                        
+                                                    <td>
+                                                        <button class="border-0 bg-transparent down-btn"><i class="fa-solid fa-chevron-down"></i></button>
+                                                    </td>
+                                                </tr>
+                        
+                                                <tr class="align-middle">
+                                                    <td class="d-flex gap-3 pt-3 pb-3">
+                                                        <div><img src="Images/pet.png"></div>
+                                                        <div><p>Pets</p></div>
+                                                    </td>
+                        
+                                                    <td class="pt-3 pb-3"><p>Edgewood Public School</p></td>
+                        
+                                                    <td><p>0.1 miles</p></td>
+                        
+                                                    <td>
+                                                        <button class="border-0 bg-transparent down-btn"><i class="fa-solid fa-chevron-down"></i></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                        
+                                    <div class="ratehub mt-4 d-flex justify-content-end"><p>Data source: <a href="#" class="text-decoration-none">OpenStreetMap</a></p></div>
+                                </div>
+
+                                <div class="mt-5">
+                                    <div class="demo-head"><h1>Demographics in Toronto</h1></div>
+                                    <div class="property-discription-column-title pb-4 mt-4"><h5>Overview</h5></div>
+                        
+                                    <div class="mt-4 demo-item">
+                                        <div class="row">
+                                            <div class="col-lg-6 mt-3">
+                                                <div class="d-flex gap-4">
+                                                    <div class="d-flex gap-2">
+                                                        <div><img src="Images/people.png"></div>
+                                                        <div><h5>Total population</h5></div>
+                                                    </div>
+                            
+                                                    <div><p>2,794,435</p></div>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="col-lg-6 mt-3">
+                                                <div class="d-flex gap-4">
+                                                    <div class="d-flex gap-2">
+                                                        <div><img src="Images/house.png"></div>
+                                                        <div><h5>Total household</h5></div>
+                                                    </div>
+                            
+                                                    <div><p>2,794,435</p></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 mt-3">
+                                                <div class="d-flex gap-4">
+                                                    <div class="d-flex gap-2">
+                                                        <div><img src="Images/user.png"></div>
+                                                        <div><h5>Average age</h5></div>
+                                                    </div>
+                            
+                                                    <div><p>41.5</p></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 mt-3">
+                                                <div class="d-flex gap-4">
+                                                    <div class="d-flex gap-2">
+                                                        <div><img src="Images/home-trend-up.png"></div>
+                                                        <div><h5>Average people per household</h5></div>
+                                                    </div>
+                            
+                                                    <div><p>$84,000</p></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 mt-3">
+                                                <div class="d-flex gap-4">
+                                                    <div class="d-flex gap-2">
+                                                        <div><img src="Images/dollar-circle1.png"></div>
+                                                        <div><h5>Median household income</h5></div>
+                                                    </div>
+                            
+                                                    <div><p>2,794,435</p></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 mt-3">
+                                                <div class="d-flex gap-4">
+                                                    <div class="d-flex gap-2">
+                                                        <div><img src="Images/brifecase-cross.png"></div>
+                                                        <div><h5>Unemployment rate</h5></div>
+                                                    </div>
+                            
+                                                    <div><p>13.9%</p></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 mt-3">
+                                                <div class="d-flex gap-4">
+                                                    <div class="d-flex gap-2">
+                                                        <div><img src="Images/car.png"></div>
+                                                        <div><h5>Average commuting time</h5></div>
+                                                    </div>
+                            
+                                                    <div><p>31 min</p></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 mt-3">
+                                                <div class="d-flex gap-4">
+                                                    <div class="d-flex gap-2">
+                                                        <div><img src="Images/home-hashtag.png"></div>
+                                                        <div><h5>Median after-tax household income</h5></div>
+                                                    </div>
+                            
+                                                    <div><p>$74,000</p></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 mt-3">
+                                                <div class="d-flex gap-4">
+                                                    <div class="d-flex gap-2">
+                                                        <div><img src="Images/home-trend-up.png"></div>
+                                                        <div><h5>Median home value</h5></div>
+                                                    </div>
+                            
+                                                    <div><p>$100,000</p></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- <div class="d-flex gap-5 align-items-center mt-4">
+                                            <div class="d-flex gap-4">
+                                                <div class="d-flex gap-2">
+                                                    <div><img src="Images/user.png"></div>
+                                                    <div><h5>Average age</h5></div>
+                                                </div>
+                        
+                                                <div><p>41.5</p></div>
+                                            </div>
+                        
+                                            <div class="d-flex gap-4">
+                                                <div class="d-flex gap-2">
+                                                    <div><img src="Images/home-trend-up.png"></div>
+                                                    <div><h5>Average people per household</h5></div>
+                                                </div>
+                        
+                                                <div><p>$84,000</p></div>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="d-flex gap-5 align-items-center mt-4">
+                                            <div class="d-flex gap-4">
+                                                <div class="d-flex gap-2">
+                                                    <div><img src="Images/dollar-circle1.png"></div>
+                                                    <div><h5>Median household income</h5></div>
+                                                </div>
+                        
+                                                <div><p>2,794,435</p></div>
+                                            </div>
+                        
+                                            <div class="d-flex gap-4">
+                                                <div class="d-flex gap-2">
+                                                    <div><img src="Images/brifecase-cross.png"></div>
+                                                    <div><h5>Unemployment rate</h5></div>
+                                                </div>
+                        
+                                                <div><p>13.9%</p></div>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="d-flex gap-5 align-items-center mt-4">
+                                            <div class="d-flex gap-4">
+                                                <div class="d-flex gap-2">
+                                                    <div><img src="Images/car.png"></div>
+                                                    <div><h5>Average commuting time</h5></div>
+                                                </div>
+                        
+                                                <div><p>31 min</p></div>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="d-flex gap-5 align-items-center mt-4">
+                                            <div class="d-flex gap-4">
+                                                <div class="d-flex gap-2">
+                                                    <div><img src="Images/home-hashtag.png"></div>
+                                                    <div><h5>Median after-tax household income</h5></div>
+                                                </div>
+                        
+                                                <div><p>$74,000</p></div>
+                                            </div>
+                        
+                                            <div class="d-flex gap-4">
+                                                <div class="d-flex gap-2">
+                                                    <div><img src="Images/home-trend-up.png"></div>
+                                                    <div><h5>Median home value</h5></div>
+                                                </div>
+                        
+                                                <div><p>$100,000</p></div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+
+                                <div class="mt-5 row">
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <div class="property-discription-column-title pb-4 mt-4"><h5>Population</h5></div>
+                                            <div class="mt-4">
+                                                <div class="d-flex demo-item justify-content-between">
+                                                    <h5>Male population</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                        
+                                                <div class="d-flex demo-item justify-content-between mt-4">
+                                                    <h5>Female population</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="property-discription-column-title pb-4 mt-4"><h5>Education</h5></div>
+                                            <div class="mt-4">
+                                                <div class="d-flex demo-item justify-content-between">
+                                                    <h5>No Diploma</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                        
+                                                <div class="d-flex demo-item justify-content-between mt-4">
+                                                    <h5>High School</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                        
+                                                <div class="d-flex demo-item justify-content-between mt-4">
+                                                    <h5>Apperenticeship</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                        
+                                                <div class="d-flex demo-item justify-content-between mt-4">
+                                                    <h5>College</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                        
+                                                <div class="d-flex demo-item justify-content-between mt-4">
+                                                    <h5>University Diploma</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                        
+                                                <div class="d-flex demo-item justify-content-between mt-4">
+                                                    <h5>University Degree</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="property-discription-column-title pb-4 mt-4"><h5>Commuting to work</h5></div>
+                                            <div class="mt-4">
+                                                <div class="d-flex demo-item justify-content-between">
+                                                    <h5>By Car, Truch or Van</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                        
+                                                <div class="d-flex demo-item justify-content-between mt-4">
+                                                    <h5>By Public Transit</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                        
+                                                <div class="d-flex demo-item justify-content-between mt-4">
+                                                    <h5>By Bicycle/By Walking</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                        
+                                                <div class="d-flex demo-item justify-content-between mt-4">
+                                                    <h5>By Other Methods</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <div class="property-discription-column-title pb-4 mt-4"><h5>Maritial status</h5></div>
+                                            <div class="mt-4">
+                                                <div class="d-flex demo-item justify-content-between">
+                                                    <h5>Married</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                        
+                                                <div class="d-flex demo-item justify-content-between mt-4">
+                                                    <h5>Living common law</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                        
+                                                <div class="d-flex demo-item justify-content-between mt-4">
+                                                    <h5>Single</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                        
+                                                <div class="d-flex demo-item justify-content-between mt-4">
+                                                    <h5>Separated</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                        
+                                                <div class="d-flex demo-item justify-content-between mt-4">
+                                                    <h5>Divorced</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                        
+                                                <div class="d-flex demo-item justify-content-between mt-4">
+                                                    <h5>Widowed</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="property-discription-column-title pb-4 mt-4"><h5>Maritial Status</h5></div>
+                                            <div class="mt-4">
+                                                <div class="d-flex demo-item justify-content-between">
+                                                    <h5>Owner Occupied</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                        
+                                                <div class="d-flex demo-item justify-content-between mt-4">
+                                                    <h5>Renter Occupied</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                        
+                                                <div class="d-flex demo-item justify-content-between mt-4">
+                                                    <h5>Single-Detached Homes</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                        
+                                                <div class="d-flex demo-item justify-content-between mt-4">
+                                                    <h5>Apartments</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                        
+                                                <div class="d-flex demo-item justify-content-between mt-4">
+                                                    <h5>Attached Homes</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                        
+                                                <div class="d-flex demo-item justify-content-between mt-4">
+                                                    <h5>Movable Homes</h5>
+                                                    <p>2,794,435</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-5 demo-item demo-txt">
+                                    <p>Toronto has 2,794,435 inhabitanta with an average age of 41.5. There are housholds in the city, while the median afte-tax income per household is $74,000 and the average number of people living under  the same roof is 2.4.
+                                        The median value of property in Toronto is set at $900,000 and the average commute is 31 min long. Read more about <a href="#" class="text-decoration-none">Toronto demographics.</a>
+                                    </p>
+                                </div>
+
+                                <div class="property-discription-column-title pb-4 mt-5"><h5>Disclaimer</h5>
+                                    <p class="mt-4">Denographic data shown in this section was gathered from the latest census data from Statistics Canada (2021). Census aggregated data represented here is extracted from data tables, by topic, at  census subdivision area level.
+                                        Differences may be found between the totals of the various categories due to multiple variables.
+                                    </p>
+                                    <p>The information is updated as soon as new data is made available. No representation, guarantee or warranty is made as to the accuracy or completeness of information.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div>
+                                <div class="about-agent-detail pb-2">
+                                    <div class="about-agent-head"><h3>About Agent/Broker</h3></div>
+                                    <div class="d-flex align-items-center gap-5 mt-4">
+                                        <div><img src="Images/Agent-1.png" class="w-100"></div>
+                                        <div class="about-agent-name">
+                                            <h3>Rishabh Gandhi</h3>
+                                            <p class="mt-3">Remax Real Estate Center</p>
+                                        </div>
+                                    </div>
+            
+                                    <div class="d-flex gap-4 mt-4">
+                                        <div class="d-flex gap-3 about-agent-call">
+                                            <div><img src="Images/call.png"></div>
+                                            <div><p>(647) 389-0027 (Cell)</p></div>
+                                        </div>
+            
+                                        <div class="d-flex gap-3 about-agent-call">
+                                            <div><img src="Images/call.png"></div>
+                                            <div><p>(647) 389-0027 (Cell)</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mt-4">
+                                    <div class="col-lg-6">
+                                        <div class="visit-btn1"><button class="bg-transparent w-100 p-2 pt-3">Visit Website <img src="Images/global-1.png" class="ms-2 mb-1"></button></div>
+                                    </div>
+            
+                                    <div class="col-lg-6">
+                                        <div class="profile-btn"><button class="border-0 w-100"><a href="#" class="text-decoration-none text-white">See Profile <i class="fa-regular fa-user text-white ms-2"></i></a></button></div>
+                                    </div>
+                                </div>
+
+                                <div class="about-agent-head mt-4"><h3>Contact</h3></div>
+                                <div class="mt-4">
+                                    <div class="about-agent-contact">
+                                        <h6>Your Name</h6>
+                                        <input type="text" placeholder="Your Full Name" class="w-100 p-3">
+                                    </div>
+
+                                    <div class="about-agent-contact mt-3">
+                                        <h6>Your Email</h6>
+                                        <input type="text" placeholder="example@email.com" class="w-100 p-3">
+                                    </div>
+
+                                    <div class="about-agent-contact mt-3">
+                                        <h6>Your Phone Number</h6>
+                                        <input type="text" placeholder="+123-456-7890" class="w-100 p-3">
+                                    </div>
+
+                                    <div class="about-agent-contact mt-3 message">
+                                        <h6>Your Message</h6>
+                                        <input type="text" placeholder="Type here..." class="w-100 p-3 pb-5">
+                                    </div>
+
+                                    <div class="profile-btn message-btn mt-4"><button class="border-0 w-100"><a href="#" class="text-decoration-none text-white">Send Message</a></button></div>
+
+                                    <div class="about-agent-contact-txt mt-4 text-center"><p>This site is protected by reCAPTCHA. Google Privacy Policy and Terms of Services apply.</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="top-listing">
+                    <div class="d-flex justify-content-between top-listing-head">
+                        <div>
+                            <h2>Similar Properties</h2>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-lg-4 mt-5">
+                            <div class="top-property">
+                                <div class="position-relative top-property-img"><img src="Images/TL-1.png">
+                                    <div class="position-absolute bg-danger p-1 top-head">
+                                        <p class="text-white">Top Listing</p>
+                                    </div>
+                                </div>
+
+                                <div class="mt-3 top-property-name"><h4>Title of the listing will com...</h4></div>
+
+                                <div class="d-flex align-items-center gap-3 mt-3 top-listing-location">
+                                    <img src="Images/location.svg">
+                                    <p>Pluto Street, Indonesia</p>
+                                </div>
+
+                                <div class="d-flex align-items-center mt-4 gap-3 pb-3 top-property-detail">
+                                    <div class="d-flex align-items-center gap-2 top-listing-location">
+                                        <img src="Images/border_all.png">
+                                        <p>800 Sq Ft</p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center gap-2 top-listing-location">
+                                        <img src="Images/local_hotel.png">
+                                        <p>1 Bedroom</p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center gap-2 top-listing-location">
+                                        <img src="Images/Group.png">
+                                        <p>2 Bathroom</p>
+                                    </div>
+                                </div>
+
+                                <div class="mt-3 top-property-price">
+                                    <h2>$581,339.00 <a href="#" class="text-decoration-none">USD</a></h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mt-5">
+                            <div class="top-property">
+                                <div class="position-relative top-property-img"><img src="Images/TL-2.png">
+                                    <div class="position-absolute bg-danger p-1 top-head">
+                                        <p class="text-white">Top Listing</p>
+                                    </div>
+                                </div>
+
+                                <div class="mt-3 top-property-name"><h4>Title of the listing will com...</h4></div>
+
+                                <div class="d-flex align-items-center gap-3 mt-3 top-listing-location">
+                                    <img src="Images/location.svg">
+                                    <p>Pluto Street, Indonesia</p>
+                                </div>
+
+                                <div class="d-flex align-items-center mt-4 gap-3 pb-3 top-property-detail">
+                                    <div class="d-flex align-items-center gap-2 top-listing-location">
+                                        <img src="Images/border_all.png">
+                                        <p>800 Sq Ft</p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center gap-2 top-listing-location">
+                                        <img src="Images/local_hotel.png">
+                                        <p>1 Bedroom</p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center gap-2 top-listing-location">
+                                        <img src="Images/Group.png">
+                                        <p>2 Bathroom</p>
+                                    </div>
+                                </div>
+
+                                <div class="mt-3 top-property-price">
+                                    <h2>$581,339.00 <a href="#" class="text-decoration-none">USD</a></h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mt-5">
+                            <div class="top-property">
+                                <div class="position-relative top-property-img"><img src="Images/TL-3.png">
+                                    <div class="position-absolute bg-danger p-1 top-head">
+                                        <p class="text-white">Top Listing</p>
+                                    </div>
+                                </div>
+
+                                <div class="mt-3 top-property-name"><h4>Title of the listing will com...</h4></div>
+
+                                <div class="d-flex align-items-center gap-3 mt-3 top-listing-location">
+                                    <img src="Images/location.svg">
+                                    <p>Pluto Street, Indonesia</p>
+                                </div>
+
+                                <div class="d-flex align-items-center mt-4 gap-3 pb-3 top-property-detail">
+                                    <div class="d-flex align-items-center gap-2 top-listing-location">
+                                        <img src="Images/border_all.png">
+                                        <p>800 Sq Ft</p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center gap-2 top-listing-location">
+                                        <img src="Images/local_hotel.png">
+                                        <p>1 Bedroom</p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center gap-2 top-listing-location">
+                                        <img src="Images/Group.png">
+                                        <p>2 Bathroom</p>
+                                    </div>
+                                </div>
+
+                                <div class="mt-3 top-property-price">
+                                    <h2>$581,339.00 <a href="#" class="text-decoration-none">USD</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div>
+                                <div class="position-relative question-img1">
+                                    <img src="Images/Q-1.png">
+                                    <div class="position-absolute question-img"><img src="Images/Q-2.png"></div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-6">
+                            <div class="question-detail">
+                                <h1 class="mt-3">Frequently asked question</h1>
+            
+                                <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
+            
+                                <div class="mt-5 question-box">
+                                    <h6>General</h6>
+            
+                                    <div>
+                                        <div class="question-list mt-4">
+                                            <button class="bg-transparent border-0 w-100 p-3" data-toggle="collapse" data-target="#question-txt1" aria-expanded="false" aria-controls="question-txt1">
+                                                <div class="d-flex justify-content-between align-items-center">What Is Mexico Property Search?
+                                                    <i class="fa-solid fa-caret-down"></i></div>
+                                            </button>
+                
+                                            <div class="collapse pe-3 ps-3 pb-3" id="question-txt1">
+                                                <span>Mexico Property Search is an online real estate marketplace that helps you find the right home or real estate investment.</span>
+                                            </div>
+                                        </div>
+            
+                                        <div class="question-list mt-4">
+                                            <button class="bg-transparent border-0 w-100 p-3" data-toggle="collapse" data-target="#question-txt2" aria-expanded="false" aria-controls="question-txt2">
+                                                <div class="d-flex justify-content-between align-items-center">Do I have to pay to use property search tools?
+                                                    <i class="fa-solid fa-caret-down"></i></div>
+                                            </button>
+                
+                                            <div class="collapse pe-3 ps-3 pb-3" id="question-txt2">
+                                                <span>Mexico Property Search is an online real estate marketplace that helps you find the right home or real estate investment.</span>
+                                            </div>
+                                        </div>
+            
+                                        <div class="mt-4 question-box"><h6>Home buyers and home Sellers</h6></div>
+            
+                                        <div class="question-list mt-4">
+                                            <button class="bg-transparent border-0 w-100 p-3" data-toggle="collapse" data-target="#question-txt3" aria-expanded="false" aria-controls="question-txt3">
+                                                <div class="d-flex justify-content-between align-items-center">How can I be notified if there are new listings?
+                                                    <i class="fa-solid fa-caret-down"></i></div>
+                                            </button>
+                
+                                            <div class="collapse pe-3 ps-3 pb-3" id="question-txt3">
+                                                <span>Mexico Property Search is an online real estate marketplace that helps you find the right home or real estate investment.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="position-relative">
+                        <img src="Images/Q-1.png">
+                        <div class="position-absolute question-img"><img src="Images/Q-2.png"></div>
+                    </div>
+    
+                    <div class="question-detail">
+                        <h1 class="mt-3">Frequently asked question</h1>
+    
+                        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
+    
+                        <div class="mt-5 question-box">
+                            <h6>General</h6>
+    
+                            <div>
+                                <div class="question-list mt-4">
+                                    <button class="bg-transparent border-0 w-100 p-3" data-toggle="collapse" data-target="#question-txt1" aria-expanded="false" aria-controls="question-txt1">
+                                        <div class="d-flex justify-content-between align-items-center">What Is Mexico Property Search?
+                                            <i class="fa-solid fa-caret-down"></i></div>
+                                    </button>
+        
+                                    <div class="collapse pe-3 ps-3 pb-3" id="question-txt1">
+                                        <span>Mexico Property Search is an online real estate marketplace that helps you find the right home or real estate investment.</span>
+                                    </div>
+                                </div>
+    
+                                <div class="question-list mt-4">
+                                    <button class="bg-transparent border-0 w-100 p-3" data-toggle="collapse" data-target="#question-txt2" aria-expanded="false" aria-controls="question-txt2">
+                                        <div class="d-flex justify-content-between align-items-center">Do I have to pay to use property search tools?
+                                            <i class="fa-solid fa-caret-down"></i></div>
+                                    </button>
+        
+                                    <div class="collapse pe-3 ps-3 pb-3" id="question-txt2">
+                                        <span>Mexico Property Search is an online real estate marketplace that helps you find the right home or real estate investment.</span>
+                                    </div>
+                                </div>
+    
+                                <div class="mt-4 question-box"><h6>Home buyers and home Sellers</h6></div>
+    
+                                <div class="question-list mt-4">
+                                    <button class="bg-transparent border-0 w-100 p-3" data-toggle="collapse" data-target="#question-txt3" aria-expanded="false" aria-controls="question-txt3">
+                                        <div class="d-flex justify-content-between align-items-center">How can I be notified if there are new listings?
+                                            <i class="fa-solid fa-caret-down"></i></div>
+                                    </button>
+        
+                                    <div class="collapse pe-3 ps-3 pb-3" id="question-txt3">
+                                        <span>Mexico Property Search is an online real estate marketplace that helps you find the right home or real estate investment.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="rent">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="rent-head">
+                                <h1 class="text-capitalize">Nearby neighborhoods</h1>
+                                <h2 class="text-capitalize">Nearby cities</h2>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="d-flex flex-column gap-2 rent-list">
+                                            <div><p>Scarborough Homes for Sale</p></div>
+                                            <div><p>Etobicoke Homes for Sale</p></div>
+                                            <div><p>North York Homes for Sale</p></div>
+                                            <div><p>Forest Hill Homes for Sale</p></div>
+                                            <div><p>East York Homes for Sale</p></div>
+                                            <div><p>Leaside Homes for Sale</p></div>
+                                            <div><p>High Park Homes for Sale</p></div>
+                                            <div><p>Niagara Homes for Sale</p></div>
+                                            <div><p>Leslieville Homes for Sale</p></div>
+                                            <div><p>Rosedale Homes for Sale Don Mills</p></div>
+                                            <div><p>Homes for Sale</p></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="d-flex flex-column gap-2 rent-list">
+                                            <div><p>Highland Creek Homes for Sale</p></div>
+                                            <div><p>Rexdale Homes for Sale</p></div>
+                                            <div><p>The Beach Homes for Sale</p></div>
+                                            <div><p>Mimico Homes for Sale</p></div>
+                                            <div><p>Bathurst Manor Homes for Sale</p></div>
+                                            <div><p>Guildwood Homes for Sale</p></div>
+                                            <div><p>Malvern Homes for Sale</p></div>
+                                            <div><p>Bridle Path Homes for Sale</p></div>
+                                            <div><p>Bloor Weat Village Homes for Sale</p></div>
+                                            <div><p>Roncesvalles Homes for Sale</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="d-flex pb-4 footer-item">
+                    <div class="footer-column">
+                        <div><img src="Images/Logo.png"></div>
+                        <p class="text-white mt-2">Our one-stop shop for buying, selling, and renting property.</p>
+                    </div>
+
+                    <div class="text-white footer-column">
+                        <div class="footer-column-list">
+                            <h6 class="text-white">Buy</h6>
+                            <ul class="list-unstyled">
+                                <li>Homes for sale</li>
+                             </ul>
+                        </div>
+
+                        <div class="mt-4 footer-column-list">
+                            <h6>Rent</h6>
+                            <ul class="list-unstyled">
+                                <li>Apartments for rent</li>
+                                <li class="mt-2">Houses for rent</li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-4 footer-column-list">
+                            <h6>Commercial</h6>
+                            <ul class="list-unstyled">
+                                <li>Properties for lease</li>
+                                <li class="mt-2">Office space for lease</li>
+                                <li class="mt-2">Commercial real estate</li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-4 footer-column-list">
+                            <h6>Agents/Brokers</h6>
+                            <ul class="list-unstyled">
+                                <li>I need an agent/broker</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="text-white footer-column">
+                        <div class="footer-column-list">
+                            <h6>About Company</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white text-decoration-none">About</a></li>
+                                <li class="mt-2"><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                                <li class="mt-2"><a href="#" class="text-white text-decoration-none">Career</a></li>
+                                <li class="mt-2"><a href="#" class="text-white text-decoration-none">Demographics/Sitemap</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-4 footer-column-list">
+                            <h6>Social</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white text-decoration-none">Facebook</a></li>
+                                <li class="mt-2"><a href="#" class="text-white text-decoration-none">YouTube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="text-white footer-column">
+                        <h6>Get in Touch</h6>
+                        <div class="d-flex gap-3 mt-3 footer-column-list">
+                            <i class="fa-solid fa-location-dot mt-1"></i>
+                            <p>123 Anywhere Street, Any City, 12345 ST, Indonesia</p>
+                        </div>
+
+                        <div class="d-flex gap-3 mt-2 footer-column-list">
+                            <i class="fa-solid fa-phone mt-1"></i>
+                            <p>+123 456 7890</p>
+                        </div>
+
+                        <div class="d-flex gap-3 mt-2 footer-column-list">
+                            <i class="fa-solid fa-envelope mt-1"></i>
+                            <p>hello@rentaura.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-white d-flex align-items-center justify-content-between footer-txt mt-5">
+                    <p>The trademarks MLS, Mutiple Listing Service and the associated logos are owned by The Canadian Real Estate Association (CREA) and identify the quality of services provided by real estate professionals who are members of CREA.
+                        The trademarks REALTOR, REALTORS, and the REALTORS logo are controlled by The Canadian Real Estate Association (CREA) and identify real estate professionals who are members of CREA.
+                    </p>
+
+                    <h6>Copyright <i class="fa-regular fa-copyright"></i> 1996-2024</h6>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

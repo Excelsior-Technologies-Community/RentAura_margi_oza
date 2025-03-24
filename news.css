@@ -1,0 +1,251 @@
+header, .nav-btn button, footer{
+    background-color: #0E694B;
+}
+
+header{
+    position: fixed;
+    /* top: 0; */
+    /* left: 0; */
+    width: 100%;
+    z-index: 1000;
+    /* background-color: white; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 10%;
+}
+
+/* .nav-logo {
+    width: 10%;
+} */
+
+.menu ul li a, .menu ul li button{
+    color: #666666;
+    font-family: 'Lufga Regular';
+}
+
+.nav-btn button{
+    border-radius: 30px;
+    width: 120px;
+}
+
+.global button{
+    font-family: 'Lufga Regular';
+}
+
+.menubar-btn button {
+    display: none;
+}
+
+@media (max-width: 991px) and (min-width: 320px) {
+    header{
+        width: 100%;
+    }
+
+    .menu, .nav-right-btn button {
+        display: none; 
+    }
+
+    .menubar-btn button {
+        display: block;
+    }
+
+    .logo2{
+        width: 100%;
+    }
+
+    .navbar-logo{
+        width: 100%;
+    }
+
+    .nav-logo{
+        width: 15%;
+        padding: 10px;
+    }
+
+    .home{
+        margin-top: 20%;
+    }
+
+    .footer-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-txt{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 991px) {
+    .home{
+        margin-top: 13%;
+    }
+
+    .home-head{
+        width: 50%;
+    }
+
+    .blog-card p{
+        width: 90%;
+    }
+}
+
+.home, .study{
+    border-bottom: 1px solid #e8e6e6;
+}
+
+.home-nav a, .home-nav ul li, .homebuying-btn button, .rent-list p {
+    font-family: 'Lufga Regular';
+}
+
+.home-nav ul li{
+    color: #B8B8B8;
+}
+
+.home-nav ul li::marker{
+    color: #B8B8B8;
+}
+
+.home-head h3, .blog-head h1, .homebuying-head h2, .rent-head h1, .rent-head h2{
+    font-family: 'Lufga Bold';
+}
+
+.home-head h3{
+    font-size: 26px;
+}
+
+.home-head p, .blog-head p, .blog-date h6, .blog-card p, .category-list p{
+    font-family: 'Lufga Regular';
+    color: #666666;
+    line-height: 1.8;
+}
+
+.home-head p{
+    font-size: 17px;
+}
+
+.blog-card button, .category-head h3, .rent-head h1, .blog-card a{
+    color: #0E694B;
+}
+
+.blog-card h4, .blog-card button, .report-head h3, .category-head h3, .category-list h6, .blog-card h6, .report1-head h3, .blog-card a, .footer-column-list h6, .footer-column h6{
+    font-family: 'Lufga SemiBold';
+}
+
+.blog-date h6, .category-list p, .rent-list p, footer p{
+    margin-bottom: -0rem;
+}
+
+.blog-head p{
+    width: 40%;
+    line-height: 1.8;
+}
+
+.blog-card h4{
+    line-height: 1.5;
+    /* width: 90%; */
+}
+
+.blog-card button{
+    font-size: 18px;
+}
+
+.blog-card img{
+    width: 100%;
+}
+
+/* .report{
+    width: 60%;
+}
+
+.report-card p {
+    width: 95%;
+}
+
+.category{
+    width: 40%;
+} */
+
+.category-list h6, .rent-list p{
+    color: #666666;
+}
+
+.category-item{
+    margin-top: 70px;
+    gap: 35px;
+}
+
+/* .homebuying{
+    gap: 70px;
+} */
+
+/* .homebuying-column1{
+    width: 55%;
+}
+
+.homebuying-column{
+    width: 30%;
+} */
+
+.blog-card h6{
+    line-height: 1.8;
+}
+
+.homebuying-btn button{
+    border-radius: 20px;
+}
+
+.rent-head h1, .rent-head h2{
+    font-size: 44px;
+}
+
+.rent-head h2{
+    color: #B8B8B8;
+}
+
+.rent-list p{
+    font-size: 18px;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+footer{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.footer-item{
+    padding-top: 70px;
+    gap: 70px;
+    border-bottom: 1px solid #949494;
+}
+
+.footer-column p, .footer-column-list ul li, .footer-txt p, .footer-txt h6{
+    font-family: 'Lufga Light';
+}
+
+.footer-column-list ul li, .footer-column-list p, .footer-txt p, .footer-txt h6{
+    font-size: 14px;
+}
+
+.footer-column{
+    width: 50%;
+}
+
+.footer-column-list p{
+    width: 70%;
+    line-height: 1.8;
+}
+
+.footer-txt p{
+    width: 85%;
+    line-height: 1.8;
+}

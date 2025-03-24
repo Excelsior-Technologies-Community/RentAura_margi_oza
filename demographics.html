@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="demographics.css">
+        <link rel="stylesheet" href="./Fonts/style.css" />
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-CDN.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://echarts.apache.org/en/js/vendors/echarts/dist/echarts.min.js"></script>
+
+        <title>RentAura Property Search | Online Property Search Website</title>
+    </head>
+
+    <body>
+        <header class="pt-2 fixed-top">
+            <div class="d-flex align-items-center justify-content-between ps-4 pe-4">
+                <div class="logo"><img src="Images/Logo.png" class="w-100"></div>
+                <div><h4 class="text-white text-uppercase">Demographics</h4></div>
+            </div>
+
+            <nav>
+                <div class="w-100 bg-white d-flex align-items-center gap-5 pe-4 ps-4">
+                    <!-- <div class="nav-logo"><img src="Images/Logo2.png" class="w-100"></div> -->
+
+                    <div class="d-flex align-items-center justify-content-between navbar-logo">
+                        <div class="nav-logo"><img src="Images/Logo2.png" class="w-100"></div>
+                        <div class="menubar-btn">
+                            <button class="bg-transparent border-0" data-bs-toggle="offcanvas" data-bs-target="#menuModal"><i class="fa-solid fa-bars"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="menu w-100 mt-3">
+                        <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
+                            <li class="me-2"><a href="home.html" class="text-decoration-none">Home</a></li>
+                            <li class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Buy</button>
+                            </li>
+    
+                            <li class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rent</button>
+                            </li>
+    
+                            <li class="dropdown">
+                                <button class="btn dropdown-toggle" id="dropdownMenuButton" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Commercial</button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="demographics.html">Demographics</a>
+                                </div>
+                            </li>
+    
+                            <li class="dropdown me-2">
+                                <button class="btn dropdown-toggle" id="dropdownMenuButton" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="news.html">News & Insights</a>
+                                    <a class="dropdown-item" href="agent.html">Agents/Brokers</a>
+                                </div>
+                            </li>
+    
+                            <li class="me-3"><a href="about.html" class="text-decoration-none">About</a></li>
+    
+                            <li><a href="contact.html" class="text-decoration-none">Contact Us</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="d-flex align-items-center gap-2 nav-right-btn">
+                        <div class="dropdown global">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="Images/global.png" class="me-2">EN</button>
+                        </div>
+    
+                        <div class="nav-btn">
+                            <button class="border-0 text-white p-2">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="offcanvas offcanvas-end" id="menuModal">
+            <div class="offcanvas-header">
+                <button type="button" class="close font-size-16 bg-transparent border-0" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="offcanvas-body">
+                <div class="mt-4">
+                    <div class="d-flex align-items-center mt-3 gap-3">
+                        <div class="d-flex justify-content-between align-items-center w-100 wishlist-list">
+                            <a href="home.html" class="text-decoration-none text-dark">Home</a>
+                        </div>
+                    </div>      
+
+                    <div class="d-flex align-items-center mt-3 gap-3">
+                        <div class="d-flex justify-content-between align-items-center w-100 wishlist-list">
+                            <a href="#" class="text-decoration-none text-dark">Buy</a>
+                            
+                            <button class="border-0 bg-transparent"><h3 class="ms-2">+</h3></button>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mt-3 gap-3">
+                        <div class="d-flex justify-content-between align-items-center w-100 wishlist-list">
+                            <a href="#" class="text-decoration-none text-dark">Rent</a>
+                            
+                            <button class="border-0 bg-transparent"><h3 class="ms-2">+</h3></button>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mt-3 gap-3">
+                        <div class="d-flex justify-content-between align-items-center w-100 wishlist-list">
+                            <a href="#" class="text-decoration-none text-dark">Commercial</a>
+                            
+                            <button class="border-0 bg-transparent"><h3 class="ms-2">+</h3></button>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mt-3 gap-3">
+                        <div class="d-flex justify-content-between align-items-center w-100 wishlist-list">
+                            <a href="#" class="text-decoration-none text-dark">Resources</a>
+                            
+                            <button class="border-0 bg-transparent"><h3 class="ms-2">+</h3></button>
+                        </div>
+                    </div>
+
+                    <div class="mt-3">
+                        <a href="about.html" class="text-decoration-none text-dark">About</a>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="contact.html" class="text-decoration-none text-dark">Contact us</a>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-2 mt-4">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="Images/global.png" class="me-2">EN</button>
+                        </div>
+    
+                        <div class="nav-btn">
+                            <button class="border-0 text-white p-2" data-toggle="modal" data-target="#signinModal">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="home">
+                <div class="d-flex">
+                    <div class="home-nav"><a href="home.html" class="text-decoration-none text-dark">Home</a></div>
+                    <div class="home-nav">
+                        <ul class="d-flex gap-4">
+                            <li class="text-dark">Canada</li>
+                            <li>Downtown</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="demo-head mt-4"><h1>Demographics in Toronto, ON</h1></div>
+
+                <div class="population">
+                    <div class="row mt-5">
+                        <div class="col-lg-8">
+                            <div>
+                                <div class="graph-head">
+                                    <h3>What is the population of Toronto?</h3>
+                                    <h5 class="mt-4">Population by gender</h5>
+                                </div>
+    
+                                <!-- <div class="d-flex justify-content-end mt-4 total">
+                                    <h6>% of total</h6>
+                                </div> -->
+                                
+                                <div>
+                                    <table class="table border-white">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th></th>
+                                                <th class="total"><h6>% of total</h6></th>
+                                            </tr>
+                                        </thead>
+    
+                                        <tr class="mt-3">
+                                            <td class="population-name pt-3"><h6>Total population 2021</h6></td>
+                                            <td class="pt-3">2,794,355</td>
+                                            <td class="pt-3">--</td>
+                                        </tr>
+    
+                                        <tr class="mt-3">
+                                            <td class="population-name pt-3"><h6>Male population</h6></td>
+                                            <td class="pt-3">1,350,865</td>
+                                            <td class="pt-3">51.7%</td>
+                                        </tr>
+    
+                                        <tr class="mt-3">
+                                            <td class="population-name pt-3"><h6>Female population</h6></td>
+                                            <td class="pt-3">1,443,490</td>
+                                            <td class="pt-3">42.5%</td>
+                                        </tr>
+    
+                                        <tr class="pt-5">
+                                            <td class="population-name pt-3"><h6>Average age</h6></td>
+                                            <td class="pt-3">41.5</td>
+                                            <td class="pt-3">--</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-4">
+                            <div>
+                                <!-- <img src="Images/SaleByGender.png"> -->
+                                <div id="chart-container"></div>
+                                <script>
+                                    var dom = document.getElementById('chart-container');
+                                    var myChart = echarts.init(dom, null, {
+                                    renderer: 'canvas',
+                                    useDirtyRect: false
+                                    });
+                                    var app = {};
+
+
+                                    var option;
+
+                                    option = {
+                                    // title: {
+                                    //     text: 'Referer of a Website',
+                                    //     subtext: 'Fake Data',
+                                    //     left: 'center'
+                                    // },
+                                    tooltip: {
+                                        trigger: 'item'
+                                    },
+                                    legend: {
+                                        orient: 'vertical',
+                                        left: 'left'
+                                    },
+                                    series: [
+                                        {
+                                        name: 'Access From',
+                                        type: 'pie',
+                                        radius: '50%',
+                                        data: [
+                                            { value: 800, name: 'Male' },
+                                            { value: 400, name: 'Women' },
+                                            // { value: 580, name: 'Email' },
+                                            // { value: 484, name: 'Union Ads' },
+                                            { value: 200, name: 'Other' }
+                                        ],
+                                        emphasis: {
+                                            itemStyle: {
+                                            shadowBlur: 10,
+                                            shadowOffsetX: 0,
+                                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                            }
+                                        }
+                                        }
+                                    ]
+                                    };
+
+                                    if (option && typeof option === 'object') {
+                                    myChart.setOption(option);
+                                    }
+
+                                    window.addEventListener('resize', myChart.resize);
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="row mt-5">
+                        <div class="col-lg-8">
+                            <div>
+                                <div class="graph-head">
+                                    <h5 class="mt-4">Population by gender</h5>
+                                </div>
+                                
+                                <div>
+                                    <table class="table border-white">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th></th>
+                                                <th class="total"><h6>% of total</h6></th>
+                                            </tr>
+                                        </thead>
+    
+                                        <tr class="mt-3">
+                                            <td class="population-name pt-3"><h6>Under 14</h6></td>
+                                            <td class="pt-3">2,794,355</td>
+                                            <td class="pt-3">13.8%</td>
+                                        </tr>
+    
+                                        <tr class="mt-3">
+                                            <td class="population-name pt-3"><h6>15-24</h6></td>
+                                            <td class="pt-3">1,350,865</td>
+                                            <td class="pt-3">51.7%</td>
+                                        </tr>
+    
+                                        <tr class="mt-3">
+                                            <td class="population-name pt-3"><h6>25-34</h6></td>
+                                            <td class="pt-3">1,443,490</td>
+                                            <td class="pt-3">42.5%</td>
+                                        </tr>
+    
+                                        <tr class="pt-5">
+                                            <td class="population-name pt-3"><h6>35-44</h6></td>
+                                            <td class="pt-3">1,443,490</td>
+                                            <td class="pt-3">42.5%</td>
+                                        </tr>
+    
+                                        <tr class="pt-5">
+                                            <td class="population-name pt-3"><h6>45-54</h6></td>
+                                            <td class="pt-3">1,443,490</td>
+                                            <td class="pt-3">42.5%</td>
+                                        </tr>
+    
+                                        <tr class="pt-5">
+                                            <td class="population-name pt-3"><h6>55-64</h6></td>
+                                            <td class="pt-3">1,443,490</td>
+                                            <td class="pt-3">42.5%</td>
+                                        </tr>
+    
+                                        <tr class="pt-5">
+                                            <td class="population-name pt-3"><h6>Over 65</h6></td>
+                                            <td class="pt-3">1,443,490</td>
+                                            <td class="pt-3">51.7%</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-4 mt-5">
+                            <div>
+                                <!-- <img src="Images/SaleByGender.png"> -->
+                                <div id="chart-container1"></div>
+                                <script>
+                                    var dom = document.getElementById('chart-container1');
+                                    var myChart = echarts.init(dom, null, {
+                                    renderer: 'canvas',
+                                    useDirtyRect: false
+                                    });
+                                    var app = {};
+
+
+                                    var option;
+
+                                    option = {
+                                    // title: {
+                                    //     text: 'Referer of a Website',
+                                    //     subtext: 'Fake Data',
+                                    //     left: 'center'
+                                    // },
+                                    tooltip: {
+                                        trigger: 'item'
+                                    },
+                                    legend: {
+                                        orient: 'vertical',
+                                        left: 'left'
+                                    },
+                                    series: [
+                                        {
+                                        name: 'Access From',
+                                        type: 'pie',
+                                        radius: '50%',
+                                        data: [
+                                            { value: 800, name: 'Male' },
+                                            { value: 400, name: 'Women' },
+                                            { value: 580},
+                                            { value: 484},
+                                            { value: 200, name: 'Other' }
+                                        ],
+                                        emphasis: {
+                                            itemStyle: {
+                                            shadowBlur: 10,
+                                            shadowOffsetX: 0,
+                                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                            }
+                                        }
+                                        }
+                                    ]
+                                    };
+
+                                    if (option && typeof option === 'object') {
+                                    myChart.setOption(option);
+                                    }
+
+                                    window.addEventListener('resize', myChart.resize);
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="graph-txt">
+                        <p>There are 2,794,355 residents in Toronto, with an average age of 41.5 Males make up 48.3% of the population, while femalesaccount for 51.7%. Locals 25 to 34 years old represent the largest age group in Toronto (490,740 individuals), followed by those aged over 65 (476,985 people).</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="row mt-5">
+                        <div class="col-lg-8">
+                            <div>
+                                <div class="graph-head">
+                                    <h5 class="mt-4">What is the marital status of Toronto residants?</h5>
+                                </div>
+                                
+                                <div>
+                                    <table class="table border-white">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th></th>
+                                                <th class="total"><h6>% of total</h6></th>
+                                            </tr>
+                                        </thead>
+    
+                                        <tr class="mt-3">
+                                            <td class="population-name pt-3"><h6>Under 14</h6></td>
+                                            <td class="pt-3">2,794,355</td>
+                                            <td class="pt-3">13.8%</td>
+                                        </tr>
+    
+                                        <tr class="mt-3">
+                                            <td class="population-name pt-3"><h6>15-24</h6></td>
+                                            <td class="pt-3">1,350,865</td>
+                                            <td class="pt-3">51.7%</td>
+                                        </tr>
+    
+                                        <tr class="mt-3">
+                                            <td class="population-name pt-3"><h6>25-34</h6></td>
+                                            <td class="pt-3">1,443,490</td>
+                                            <td class="pt-3">42.5%</td>
+                                        </tr>
+    
+                                        <tr class="pt-5">
+                                            <td class="population-name pt-3"><h6>35-44</h6></td>
+                                            <td class="pt-3">1,443,490</td>
+                                            <td class="pt-3">42.5%</td>
+                                        </tr>
+    
+                                        <tr class="pt-5">
+                                            <td class="population-name pt-3"><h6>45-54</h6></td>
+                                            <td class="pt-3">1,443,490</td>
+                                            <td class="pt-3">42.5%</td>
+                                        </tr>
+    
+                                        <tr class="pt-5">
+                                            <td class="population-name pt-3"><h6>55-64</h6></td>
+                                            <td class="pt-3">1,443,490</td>
+                                            <td class="pt-3">42.5%</td>
+                                        </tr>
+    
+                                        <tr class="pt-5">
+                                            <td class="population-name pt-3"><h6>Over 65</h6></td>
+                                            <td class="pt-3">1,443,490</td>
+                                            <td class="pt-3">51.7%</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-4 mt-5">
+                            <div>
+                                <!-- <img src="Images/SaleByGender.png"> -->
+                                <div id="chart-container2"></div>
+                                <script>
+                                    var dom = document.getElementById('chart-container2');
+                                    var myChart = echarts.init(dom, null, {
+                                    renderer: 'canvas',
+                                    useDirtyRect: false
+                                    });
+                                    var app = {};
+
+
+                                    var option;
+
+                                    option = {
+                                    // title: {
+                                    //     text: 'Referer of a Website',
+                                    //     subtext: 'Fake Data',
+                                    //     left: 'center'
+                                    // },
+                                    tooltip: {
+                                        trigger: 'item'
+                                    },
+                                    legend: {
+                                        orient: 'vertical',
+                                        left: 'left'
+                                    },
+                                    series: [
+                                        {
+                                        name: 'Access From',
+                                        type: 'pie',
+                                        radius: '50%',
+                                        data: [
+                                            { value: 800, name: 'Male' },
+                                            { value: 400, name: 'Women' },
+                                            { value: 580},
+                                            { value: 484},
+                                            { value: 200, name: 'Other' }
+                                        ],
+                                        emphasis: {
+                                            itemStyle: {
+                                            shadowBlur: 10,
+                                            shadowOffsetX: 0,
+                                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                            }
+                                        }
+                                        }
+                                    ]
+                                    };
+
+                                    if (option && typeof option === 'object') {
+                                    myChart.setOption(option);
+                                    }
+
+                                    window.addEventListener('resize', myChart.resize);
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="graph-txt">
+                        <p>A total of 853,580 people in Toronto have never been marrieed (which represents 35.4% of the population). Wedded people in Toronto (1,020,980 locals) account for 42.4% of the residental pool. Meanwhile, approximately 8% of locals live common law (that's a total of 192,430 people).</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="row mt-5">
+                        <div class="col-lg-8">
+                            <div>
+                                <div class="graph-head">
+                                    <h5 class="mt-4">What are the employment statistics in Toronto?</h5>
+                                </div>
+                                
+                                <div>
+                                    <table class="table border-white">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th></th>
+                                                <th class="total"><h6>% of total</h6></th>
+                                            </tr>
+                                        </thead>
+    
+                                        <tr class="mt-3">
+                                            <td class="population-name pt-3"><h6>Under 14</h6></td>
+                                            <td class="pt-3">2,794,355</td>
+                                            <td class="pt-3">13.8%</td>
+                                        </tr>
+    
+                                        <tr class="mt-3">
+                                            <td class="population-name pt-3"><h6>15-24</h6></td>
+                                            <td class="pt-3">1,350,865</td>
+                                            <td class="pt-3">51.7%</td>
+                                        </tr>
+    
+                                        <tr class="mt-3">
+                                            <td class="population-name pt-3"><h6>25-34</h6></td>
+                                            <td class="pt-3">1,443,490</td>
+                                            <td class="pt-3">42.5%</td>
+                                        </tr>
+    
+                                        <tr class="pt-5">
+                                            <td class="population-name pt-3"><h6>35-44</h6></td>
+                                            <td class="pt-3">1,443,490</td>
+                                            <td class="pt-3">42.5%</td>
+                                        </tr>
+    
+                                        <tr class="pt-5">
+                                            <td class="population-name pt-3"><h6>45-54</h6></td>
+                                            <td class="pt-3">1,443,490</td>
+                                            <td class="pt-3">42.5%</td>
+                                        </tr>
+    
+                                        <tr class="pt-5">
+                                            <td class="population-name pt-3"><h6>55-64</h6></td>
+                                            <td class="pt-3">1,443,490</td>
+                                            <td class="pt-3">42.5%</td>
+                                        </tr>
+    
+                                        <tr class="pt-5">
+                                            <td class="population-name pt-3"><h6>Over 65</h6></td>
+                                            <td class="pt-3">1,443,490</td>
+                                            <td class="pt-3">51.7%</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-4 mt-5">
+                            <div>
+                                <!-- <img src="Images/SaleByGender.png"> -->
+                                <div id="chart-container3"></div>
+                                <script>
+                                    var dom = document.getElementById('chart-container3');
+                                    var myChart = echarts.init(dom, null, {
+                                    renderer: 'canvas',
+                                    useDirtyRect: false
+                                    });
+                                    var app = {};
+
+
+                                    var option;
+
+                                    option = {
+                                    // title: {
+                                    //     text: 'Referer of a Website',
+                                    //     subtext: 'Fake Data',
+                                    //     left: 'center'
+                                    // },
+                                    tooltip: {
+                                        trigger: 'item'
+                                    },
+                                    legend: {
+                                        orient: 'vertical',
+                                        left: 'left'
+                                    },
+                                    series: [
+                                        {
+                                        name: 'Access From',
+                                        type: 'pie',
+                                        radius: '50%',
+                                        data: [
+                                            { value: 800, name: 'Male' },
+                                            { value: 400, name: 'Women' },
+                                            { value: 580},
+                                            { value: 484},
+                                            { value: 200, name: 'Other' }
+                                        ],
+                                        emphasis: {
+                                            itemStyle: {
+                                            shadowBlur: 10,
+                                            shadowOffsetX: 0,
+                                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                            }
+                                        }
+                                        }
+                                    ]
+                                    };
+
+                                    if (option && typeof option === 'object') {
+                                    myChart.setOption(option);
+                                    }
+
+                                    window.addEventListener('resize', myChart.resize);
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="graph-txt">
+                        <p>A total of 853,580 people in Toronto have never been marrieed (which represents 35.4% of the population). Wedded people in Toronto (1,020,980 locals) account for 42.4% of the residental pool. Meanwhile, approximately 8% of locals live common law (that's a total of 192,430 people).</p>
+                    </div>
+                </div>
+
+                <div class="mt-5 disclaimer-txt">
+                    <div class="disclaimer-head pb-3"><h3>Methodology & Disclaimers</h3></div>
+                    <div class="mt-4">
+                        <p>Demographic data shown in this section was gathered from the latest census data from Statistics Canada (2021).</p>
+                        <p>Census aggregated data represented here is extracted from Data Tables, by topic, at census subdivision area level. Differences may be found between the totals of the various categories due to multiple varialbles.</p>
+                        <p>The information is updated as soon as new data is made available. No representation, guarantee or warranty is made as to the accuracy or completeness of information.</p>
+                    </div>
+                </div>
+
+                <div class="top-listing">
+                    <div class="d-flex justify-content-between top-listing-head">
+                        <div>
+                            <h2>Similar Properties</h2>
+                        </div>
+                    </div>
+    
+                    <div class="row mt-4">
+                        <div class="col-lg-4 mt-5">
+                            <div class="top-property">
+                                <div class="position-relative top-property-img"><img src="Images/TL-1.png">
+                                    <div class="position-absolute bg-danger p-1 top-head">
+                                        <p class="text-white">Top Listing</p>
+                                    </div>
+                                </div>
+    
+                                <div class="mt-3 top-property-name"><h4>Title of the listing will com...</h4></div>
+    
+                                <div class="d-flex align-items-center gap-3 mt-3 top-listing-location">
+                                    <img src="Images/location.svg">
+                                    <p>Pluto Street, Indonesia</p>
+                                </div>
+    
+                                <div class="d-flex align-items-center mt-4 gap-3 pb-3 top-property-detail">
+                                    <div class="d-flex align-items-center gap-2 top-listing-location">
+                                        <img src="Images/border_all.png">
+                                        <p>800 Sq Ft</p>
+                                    </div>
+    
+                                    <div class="d-flex align-items-center gap-2 top-listing-location">
+                                        <img src="Images/local_hotel.png">
+                                        <p>1 Bedroom</p>
+                                    </div>
+    
+                                    <div class="d-flex align-items-center gap-2 top-listing-location">
+                                        <img src="Images/Group.png">
+                                        <p>2 Bathroom</p>
+                                    </div>
+                                </div>
+    
+                                <div class="mt-3 top-property-price">
+                                    <h2>$581,339.00 <a href="#" class="text-decoration-none">USD</a></h2>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-4 mt-5">
+                            <div class="top-property">
+                                <div class="position-relative top-property-img"><img src="Images/TL-2.png">
+                                    <div class="position-absolute bg-danger p-1 top-head">
+                                        <p class="text-white">Top Listing</p>
+                                    </div>
+                                </div>
+    
+                                <div class="mt-3 top-property-name"><h4>Title of the listing will com...</h4></div>
+    
+                                <div class="d-flex align-items-center gap-3 mt-3 top-listing-location">
+                                    <img src="Images/location.svg">
+                                    <p>Pluto Street, Indonesia</p>
+                                </div>
+    
+                                <div class="d-flex align-items-center mt-4 gap-3 pb-3 top-property-detail">
+                                    <div class="d-flex align-items-center gap-2 top-listing-location">
+                                        <img src="Images/border_all.png">
+                                        <p>800 Sq Ft</p>
+                                    </div>
+    
+                                    <div class="d-flex align-items-center gap-2 top-listing-location">
+                                        <img src="Images/local_hotel.png">
+                                        <p>1 Bedroom</p>
+                                    </div>
+    
+                                    <div class="d-flex align-items-center gap-2 top-listing-location">
+                                        <img src="Images/Group.png">
+                                        <p>2 Bathroom</p>
+                                    </div>
+                                </div>
+    
+                                <div class="mt-3 top-property-price">
+                                    <h2>$581,339.00 <a href="#" class="text-decoration-none">USD</a></h2>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-4 mt-5">
+                            <div class="top-property">
+                                <div class="position-relative top-property-img"><img src="Images/TL-3.png">
+                                    <div class="position-absolute bg-danger p-1 top-head">
+                                        <p class="text-white">Top Listing</p>
+                                    </div>
+                                </div>
+    
+                                <div class="mt-3 top-property-name"><h4>Title of the listing will com...</h4></div>
+    
+                                <div class="d-flex align-items-center gap-3 mt-3 top-listing-location">
+                                    <img src="Images/location.svg">
+                                    <p>Pluto Street, Indonesia</p>
+                                </div>
+    
+                                <div class="d-flex align-items-center mt-4 gap-3 pb-3 top-property-detail">
+                                    <div class="d-flex align-items-center gap-2 top-listing-location">
+                                        <img src="Images/border_all.png">
+                                        <p>800 Sq Ft</p>
+                                    </div>
+    
+                                    <div class="d-flex align-items-center gap-2 top-listing-location">
+                                        <img src="Images/local_hotel.png">
+                                        <p>1 Bedroom</p>
+                                    </div>
+    
+                                    <div class="d-flex align-items-center gap-2 top-listing-location">
+                                        <img src="Images/Group.png">
+                                        <p>2 Bathroom</p>
+                                    </div>
+                                </div>
+    
+                                <div class="mt-3 top-property-price">
+                                    <h2>$581,339.00 <a href="#" class="text-decoration-none">USD</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="d-flex pb-4 footer-item">
+                    <div class="footer-column">
+                        <div><img src="Images/Logo.png"></div>
+                        <p class="text-white mt-2">Our one-stop shop for buying, selling, and renting property.</p>
+                    </div>
+
+                    <div class="text-white footer-column">
+                        <div class="footer-column-list">
+                            <h6 class="text-white">Buy</h6>
+                            <ul class="list-unstyled">
+                                <li>Homes for sale</li>
+                             </ul>
+                        </div>
+
+                        <div class="mt-4 footer-column-list">
+                            <h6>Rent</h6>
+                            <ul class="list-unstyled">
+                                <li>Apartments for rent</li>
+                                <li class="mt-2">Houses for rent</li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-4 footer-column-list">
+                            <h6>Commercial</h6>
+                            <ul class="list-unstyled">
+                                <li>Properties for lease</li>
+                                <li class="mt-2">Office space for lease</li>
+                                <li class="mt-2">Commercial real estate</li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-4 footer-column-list">
+                            <h6>Agents/Brokers</h6>
+                            <ul class="list-unstyled">
+                                <li>I need an agent/broker</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="text-white footer-column">
+                        <div class="footer-column-list">
+                            <h6>About Company</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white text-decoration-none">About</a></li>
+                                <li class="mt-2"><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                                <li class="mt-2"><a href="#" class="text-white text-decoration-none">Career</a></li>
+                                <li class="mt-2"><a href="#" class="text-white text-decoration-none">Demographics/Sitemap</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-4 footer-column-list">
+                            <h6>Social</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white text-decoration-none">Facebook</a></li>
+                                <li class="mt-2"><a href="#" class="text-white text-decoration-none">YouTube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="text-white footer-column">
+                        <h6>Get in Touch</h6>
+                        <div class="d-flex gap-3 mt-3 footer-column-list">
+                            <i class="fa-solid fa-location-dot mt-1"></i>
+                            <p>123 Anywhere Street, Any City, 12345 ST, Indonesia</p>
+                        </div>
+
+                        <div class="d-flex gap-3 mt-2 footer-column-list">
+                            <i class="fa-solid fa-phone mt-1"></i>
+                            <p>+123 456 7890</p>
+                        </div>
+
+                        <div class="d-flex gap-3 mt-2 footer-column-list">
+                            <i class="fa-solid fa-envelope mt-1"></i>
+                            <p>hello@rentaura.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-white d-flex align-items-center justify-content-between footer-txt mt-5">
+                    <p>The trademarks MLS, Mutiple Listing Service and the associated logos are owned by The Canadian Real Estate Association (CREA) and identify the quality of services provided by real estate professionals who are members of CREA.
+                        The trademarks REALTOR, REALTORS, and the REALTORS logo are controlled by The Canadian Real Estate Association (CREA) and identify real estate professionals who are members of CREA.
+                    </p>
+
+                    <h6>Copyright <i class="fa-regular fa-copyright"></i> 1996-2024</h6>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,390 @@
+header, .nav-btn button, footer, .visit-btn button, .property-discription, .table button, .profile-btn button{
+    background-color: #0E694B;
+}
+
+header{
+    position: fixed;
+    /* top: 0; */
+    /* left: 0; */
+    width: 100%;
+    z-index: 1000;
+    /* background-color: white; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 10%;
+}
+
+/* .nav-logo {
+    width: 10%;
+} */
+
+.menu ul li a, .menu ul li button{
+    color: #666666;
+    font-family: 'Lufga Regular';
+}
+
+.nav-btn button{
+    border-radius: 30px;
+    width: 120px;
+}
+
+.global button{
+    font-family: 'Lufga Regular';
+}
+
+.menubar-btn button {
+    display: none;
+}
+
+@media (max-width: 991px) and (min-width: 320px) {
+    header{
+        width: 100%;
+    }
+
+    .menu, .nav-right-btn button, .question-img{
+        display: none; 
+    }
+
+    .menubar-btn button {
+        display: block;
+    }
+
+    .logo2{
+        width: 100%;
+    }
+
+    .navbar-logo{
+        width: 100%;
+    }
+
+    .nav-logo{
+        width: 15%;
+        padding: 10px;
+    }
+
+    .home{
+        margin-top: 18%;
+    }
+
+    .listing-details-head, .listing-name, .location-btn{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inquire-btn{
+        width: auto;
+    }
+
+    .interest{
+        margin-top: 150px;
+    }
+
+    .footer-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-txt{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 991px) {
+    .home{
+        margin-top: 13%;
+    }
+
+    .listing-details-head{
+        align-items: center;
+    }
+
+    .inquire-btn{
+        width: 170px;
+    }
+
+    .location-btn{
+        top: 10px;
+        left: 10px;
+    }
+
+    .interest{
+        margin-top: 50px;
+    }
+}
+
+.home-nav a, .home-nav ul li, .top-head p, .property-link a, .visit-btn button, .property-summary p, .details-link p, .rates-list button, .rates-list h5,
+.table h5, .table th, .ratehub p, .demo-item p, .about-agent-call p, .about-agent-contact-txt p, .top-listing-location, .question-list button, .question-box h6,
+.rent-list p{
+    font-family: 'Lufga Regular';
+}
+
+.home-nav ul li, .about-agent-contact-txt p, .rent-head h2{
+    color: #B8B8B8;
+}
+
+.home-nav ul li::marker{
+    color: #B8B8B8;
+}
+
+.listing-details-head h1, .property-discription-head h1, .property-discription-head h1, .rates-head h1, .table h3, .table h4, .listing-details-location-head h1,
+.interest-head h1, .demo-head h1, .rent-head h1, .rent-head h2{
+    font-family: 'Lufga Bold';
+}
+
+.listing-details-head h1{
+    font-size: 52px;
+}
+
+.listing-details-head button, .show-btn button, .top-property-price h5, .property-location p, .description p, .demographics h5, .rates-head p, .more-btn button,
+.table p, .listing-details-location-head p, .location-btn button, .interest-head p, .property-discription-column-title p, .about-agent-name p, .about-agent-contact h6,
+.question-detail p, .question-list span{
+    color: #666666;
+    font-family: 'Lufga Regular';
+}
+
+.listing-details-head button img{
+    margin-bottom: 10px;
+}
+
+.play-btn{
+    top: 44%;
+    left: 46%;
+    font-size: 42px;
+}
+
+.top-head{
+    top: 25px;
+    left: 25px;
+    border-radius: 20px;
+    width: 120px;
+    text-align: center;
+}
+
+.top-head p, .top-property-price h5, .property-location p, .property-discription-head h1, .property-discription-head p,
+.property-block p, .property-block h4, .rates-list h6, .rates-list h5, .table p, .property-discription-column-title p,
+.top-listing-location p, .rent-list p, footer p{
+    margin-bottom: -0rem;
+}
+
+.top-head p, .about-agent-contact-txt p{
+    font-size: 14px;
+}
+
+.show-btn{
+    bottom: 5%;
+    right: 5%;
+}
+
+.show-btn button{
+    border: 1px solid #0E694B;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.top-property-price h2 a, .top-property-price h5 a, .top-property-price a, .property-discription-column-title h5, .details-link p a, .rates-head p a, .demo-item p a, .question-box h6, .rent-head h1{
+    color: #0E694B;
+}
+
+.top-property-price h2, .top-property-price h5, .property-discription-column-title h5, .property-summary h5, .rates-head p a, .rates-list h6, .table button, .show-btn button, .ratehub p a, .demo-item h5, .about-agent-head h3, .about-agent-name h3,
+.visit-btn1 button, .profile-btn button, .top-listing-head h2, .top-property-name h4, .question-detail h1, .footer-column-list h6, .footer-column h6{
+    font-family: 'Lufga SemiBold';
+}
+
+.top-property-price h2, .top-listing-head h2{
+    font-size: 42px;
+}
+
+.property-item{
+    gap: 90px;
+}
+
+.visit-btn button{
+    border-radius: 10px;
+    width: 180px;
+}
+
+.property-discription, .property-discription1, .rates, .listing-details-location-head, .top-listing{
+    margin-top: 70px;
+}
+
+.property-discription-column-title, .about-agent-detail{
+    border-bottom: 1px solid #B8B8B8;
+}
+
+.property-summary h5, .ratehub p, .demo-item, .rent-list p, .question-list button i{
+    color: #666666;
+}
+
+.description p{
+    font-size: 18px;
+    line-height: 1.8;
+    word-spacing: 2px;
+}
+
+.property-discription, .property-discription-block, .rates-list, .table button, .profile-btn button, .about-agent-contact input{
+    border-radius: 10px;
+}
+
+.property-discription-block{
+    background-color: white;
+}
+
+.property-block{
+    width: 100%;
+}
+
+.property-block h4{
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+.property-block-column{
+    gap: 100px;
+}
+
+.property-block i{
+    font-size: 8px;
+}
+
+.property-block h4, .show-btn button, .ratehub p a, .about-agent-head h3, .visit-btn1 button{
+    color: #0E694B;
+}
+
+.block-2 h4{
+    color: #0043CE;
+}
+
+.block-3 h4{
+    color: #81B52C;
+}
+
+.rates-item, .table thead{
+    background-color: #fafafa;
+}
+
+.about-agent-call p, .rent-list p{
+    font-size: 18px;
+}
+
+.show-btn button{
+    font-size: 20px;
+}
+
+.rates-list h6, .rates-list h5, .rates-list button{
+    font-size: 15px;
+}
+
+.more-btn{
+    display: flex;
+    justify-content: end;
+}
+
+.inquire-btn{
+    font-size: 22px;
+    border-radius: 15px;
+}
+
+.location-btn button{
+    font-size: 16px;
+    /* width: 180px; */
+    border-radius: 10px;
+    background-color: white;
+}
+
+.location-btn button:hover{
+    background-color: #0E694B;
+    color: white;
+}
+
+.demo-txt p, .property-discription-column-title p, .about-agent-contact-txt p{
+    line-height: 1.8;
+}
+
+.visit-btn1 button{
+    border: 2px solid #0E694B;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.profile-btn button{
+    font-size: 20px;
+    padding: 15px;
+}
+
+.about-agent-contact input{
+    border: 1px solid #666666;
+}
+
+.message-btn button{
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.top-property-img, .top-property-img img{
+    width: 100%;
+}
+
+.question, .rent{
+    margin-top: 100px;
+}
+
+.question-detail p{
+    line-height: 1.8;
+}
+
+.question-img{
+    top: 47%;
+    left: 45%;
+}
+
+.question-list{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.rent-head h1, .rent-head h2{
+    font-size: 44px;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+footer{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.footer-item{
+    padding-top: 70px;
+    gap: 70px;
+    border-bottom: 1px solid #949494;
+}
+
+.footer-column p, .footer-column-list ul li, .footer-txt p, .footer-txt h6{
+    font-family: 'Lufga Light';
+}
+
+.footer-column-list ul li, .footer-column-list p, .footer-txt p, .footer-txt h6{
+    font-size: 14px;
+}
+
+.footer-column{
+    width: 50%;
+}
+
+.footer-column-list p{
+    width: 70%;
+    line-height: 1.8;
+}
+
+.footer-txt p{
+    width: 85%;
+    line-height: 1.8;
+}

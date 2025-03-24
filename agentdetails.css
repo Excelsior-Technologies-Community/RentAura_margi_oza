@@ -1,0 +1,289 @@
+header, .nav-btn button, footer, .agent-search-btn button, .profile-btn button{
+    background-color: #0E694B;
+}
+
+header{
+    position: fixed;
+    /* top: 0; */
+    /* left: 0; */
+    width: 100%;
+    z-index: 1000;
+    /* background-color: white; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 10%;
+}
+
+/* .nav-logo {
+    width: 10%;
+} */
+
+.menu ul li a, .menu ul li button{
+    color: #666666;
+    font-family: 'Lufga Regular';
+}
+
+.nav-btn button{
+    border-radius: 30px;
+    width: 120px;
+}
+
+.global button{
+    font-family: 'Lufga Regular';
+}
+
+.menubar-btn button {
+    display: none;
+}
+
+@media (max-width: 991px) and (min-width: 320px) {
+    header{
+        width: 100%;
+    }
+
+    .menu, .nav-right-btn button, .question-img{
+        display: none; 
+    }
+
+    .menubar-btn button {
+        display: block;
+    }
+
+    .logo2{
+        width: 100%;
+    }
+
+    .navbar-logo{
+        width: 100%;
+    }
+
+    .nav-logo{
+        width: 15%;
+        padding: 10px;
+    }
+
+    .home{
+        margin-top: 20%;
+    }
+
+    .footer-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-txt{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 991px) {
+    .home{
+        margin-top: 15%;
+    }
+}
+
+.border{
+    width: 5px;
+    height: auto;
+    background-color: #0E694B;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.follow-btn p, .agent-details-head p,  .agent-details-contact h5, .visit-btn button{
+    color: #0E694B;
+}
+
+.follow-btn{
+    background-color: #f2faf7;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.follow-btn p, .agent-details-head h1, .agent-details-contact h5, .visit-btn button, .agent-details-contact h3, .profile-btn button, .about-agent-head h3, .agent-listing-head h4, .top-property-name h4, .top-property-price h2, .footer-column h6{
+    font-family: 'Lufga SemiBold';
+}
+
+.follow-btn p, .agent-about-txt p, .top-listing-location p, .listing-client p, .top-head p{
+    margin-bottom: -0rem;
+}
+
+/* .agent-details-head h1{
+    font-family: 'Lufga Bold';
+} */
+
+.agent-details-head p, .agent-contact-list p, .agent-about-txt p, .about-agent-contact-txt p, .top-property-detail, .page-link{
+    font-family: 'Lufga Regular';
+}
+
+.agent-details-contact, .agent-about-txt, .home{
+    border-bottom: 1px solid #b8b8b8;
+}
+
+.agent-contact-list p, .page-link{
+    font-size: 18px;
+}
+
+.agent-about-txt p{
+    line-height: 1.8;
+}
+
+.visit-btn button{
+    border: 2px solid #0E694B;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.about-agent-contact-txt p{
+    color: #B8B8B8;
+}
+
+.about-agent-contact h6, .top-property p, .page-number p{
+    color: #666666;
+    font-family: 'Lufga Regular';
+}
+
+.about-agent-contact-txt p, .page-number p{
+    font-size: 14px;
+}
+
+.about-agent-contact input, .profile-btn button, .page-link{
+    border-radius: 10px;
+}
+
+.about-agent-contact input{
+    width: 90%;
+}
+
+.about-agent-contact-txt p{
+    line-height: 1.8;
+}
+
+.about-agent-contact input{
+    border: 1px solid #666666;
+}
+
+.profile-btn button{
+    font-size: 20px;
+    padding: 15px;
+}
+
+.top-property{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.scrollbar
+{
+	/* margin-left: 40px; */
+	float: left;
+	height: 1800px;
+    width: 100%;
+	/* width: 220px; */
+	/* background: #F5F5F5; */
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+.force-overflow
+{
+	min-height: 750px;
+}
+
+#style-1::-webkit-scrollbar-track
+{
+	/* -webkit-box-shadow: inset 0 0 6px rgb(223, 220, 220); */
+	/* border-radius: 10px; */
+	background-color: #c9d8d1;
+    border-radius: 10px;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 5px;
+    height: 5px;
+	/* background-color: #F5F5F5; */
+    /* height: 40px; */
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	/* -webkit-box-shadow: inset 0 0 6px rgb(223, 220, 220); */
+	background-color: #0E694B;
+}
+
+.top-property-price h2 a{
+    color: #0E694B;
+}
+
+.top-property-img.top-property-img img{
+    width: 100%;
+}
+
+.top-property-detail{
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.top-head{
+    top: 15px;
+    left: 15px;
+    border-radius: 20px;
+    width: 100px;
+    text-align: center;
+}
+
+.top-head p{
+    font-family: 'Lufga Light';
+    font-size: 12px;
+}
+
+.page-link{
+    background: none;
+}
+
+.page-link:hover{
+    border: 1px solid #0E694B;
+    background-color: #cdf9ea;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+footer{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.footer-item{
+    padding-top: 70px;
+    gap: 70px;
+    border-bottom: 1px solid #949494;
+}
+
+.footer-column p, .footer-column-list ul li, .footer-txt p, .footer-txt h6{
+    font-family: 'Lufga Light';
+}
+
+.footer-column-list ul li, .footer-column-list p, .footer-txt p, .footer-txt h6{
+    font-size: 14px;
+}
+
+.footer-column{
+    width: 50%;
+}
+
+.footer-column-list p{
+    width: 70%;
+    line-height: 1.8;
+}
+
+.footer-txt p{
+    width: 85%;
+}

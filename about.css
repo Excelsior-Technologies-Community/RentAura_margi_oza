@@ -1,0 +1,261 @@
+header, .nav-btn button, footer{
+    background-color: #0E694B;
+}
+
+header{
+    position: fixed;
+    /* top: 0; */
+    /* left: 0; */
+    width: 100%;
+    z-index: 1000;
+    /* background-color: white; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 10%;
+}
+
+/* .nav-logo {
+    width: 10%;
+} */
+
+.menu ul li a, .menu ul li button{
+    color: #666666;
+    font-family: 'Lufga Regular';
+}
+
+.nav-btn button{
+    border-radius: 30px;
+    width: 120px;
+}
+
+.global button{
+    font-family: 'Lufga Regular';
+}
+
+.menubar-btn button {
+    display: none;
+}
+
+@media (max-width: 991px) and (min-width: 320px) {
+    header{
+        width: 100%;
+    }
+
+    .menu, .nav-right-btn button, .history-img2{
+        display: none; 
+    }
+
+    .menubar-btn button {
+        display: block;
+    }
+
+    .logo{
+        width: 20%;
+    }
+
+    .navbar-logo{
+        width: 100%;
+    }
+
+    .nav-logo{
+        width: 30%;
+        padding: 10px;
+    }
+
+    .about {
+        margin-top: 20%;
+    }
+
+    .about p{
+        width: 90%;
+    }
+
+    .about-experience, .press, .history-detail, .agent-list-head, .agent-list-bottom{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .agent-list-heading p{
+        margin-top: 20px;
+    }
+
+    .see-more button{
+        width: 100%;
+    }
+
+    .footer-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-txt{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.about p, .about-experience-column1 p, .vision-txt p, .press-txt p, .history-head p, .history-txt p, .agent-list-head p, .agent-list-name p, .agent-list-bottom p{
+    color: #666666;
+    font-family: 'Lufga Regular';
+    line-height: 1.8;
+}
+
+@media (min-width: 991px) {
+    .about p{
+        width: 47%;
+    }
+
+    .vision-txt{
+        width: 40%;
+    }
+
+    .about {
+        margin-top: 15%;
+    }
+
+    .press-txt{
+        width: 42%;
+    }
+
+    .agent-list-heading{
+        width: 45%;
+    }
+}
+
+.about h1{
+    font-size: 56px;
+    font-family: 'Lufga Bold';
+}
+
+.about p a, .about-experience-column1 p a{
+    color: #0E694B;
+}
+
+.about-experience h1, .vision-txt h2, .press h1, .history-head h1, .agent-list-head h1, .about-experience-column h1{
+    font-family: 'Lufga Bold';
+}
+
+.about-experience-column h1{
+    font-size: 48px;
+}
+
+/* .about-experience-column{
+    width: 40%;
+}
+
+.about-experience-column1{
+    width: 45%;
+} */
+
+.about-img, .vision, .press-list, .agent-list-bottom{
+    margin-top: 70px;
+}
+
+@media (max-width: 768px){
+    .vision-txt{
+        width: 45%;
+    }
+}
+
+@media (max-width: 767px) and (min-width:320px){
+    .vision{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vision-txt{
+        width: 100%;
+    }
+}
+
+/* .vision-txt{
+    width: 40%;
+} */
+
+.press, .history, .agent-list, footer{
+    margin-top: 100px;
+}
+
+.press-list{
+    grid-template-columns: repeat(10, 1fr);
+
+    @media (max-width:768px) and (min-width:320px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.history-column, .history-column1{
+    margin-top: 100px;
+}
+
+.history-head p{
+    font-size: 16px;
+    width: 90%;
+}
+
+.history-txt h4, .agent-list-name h3, .footer-column-list h6, .footer-column h6{
+    font-family: 'Lufga SemiBold';
+}
+
+.history-txt p{
+    font-size: 16px;
+}
+
+.history-img2{
+    top: 55%;
+    left: -14%;
+    width: 50%;
+}
+
+/* .history-column{
+    width: 47%;
+} */
+
+.agent-list-heading p, footer p{
+    margin-bottom: -0rem;
+}
+
+.see-more button{
+    border-radius: 10px;
+    width: 120px;
+    font-family: 'Lufga Regular';
+}
+
+footer{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.footer-item{
+    padding-top: 70px;
+    gap: 70px;
+    border-bottom: 1px solid #949494;
+}
+
+.footer-column-list ul li, .footer-column-list p, .footer-txt p, .footer-txt h6{
+    font-size: 14px;
+}
+
+.footer-column{
+    width: 50%;
+}
+
+.footer-column-list p{
+    width: 70%;
+    line-height: 1.8;
+}
+
+.footer-txt p{
+    width: 85%;
+    line-height: 1.8;
+}
+
+.footer-column p,
+.footer-column-list ul li, .footer-txt p, .footer-txt h6{
+    font-family: 'Lufga Light';
+}

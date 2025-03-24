@@ -1,0 +1,239 @@
+header, .nav-btn button, footer, .agent-search-btn button, .profile-btn button{
+    background-color: #0E694B;
+}
+
+header{
+    position: fixed;
+    /* top: 0; */
+    /* left: 0; */
+    width: 100%;
+    z-index: 1000;
+    /* background-color: white; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 10%;
+}
+
+/* .nav-logo {
+    width: 10%;
+} */
+
+.menu ul li a, .menu ul li button{
+    color: #666666;
+    font-family: 'Lufga Regular';
+}
+
+.nav-btn button{
+    border-radius: 30px;
+    width: 120px;
+}
+
+.global button{
+    font-family: 'Lufga Regular';
+}
+
+.menubar-btn button {
+    display: none;
+}
+
+@media (max-width: 991px) and (min-width: 320px) {
+    header{
+        width: 100%;
+    }
+
+    .menu, .nav-right-btn button, .question-img{
+        display: none; 
+    }
+
+    .menubar-btn button {
+        display: block;
+    }
+
+    .logo2{
+        width: 100%;
+    }
+
+    .navbar-logo{
+        width: 100%;
+    }
+
+    .nav-logo{
+        width: 15%;
+        padding: 10px;
+    }
+
+    .home{
+        margin-top: 20%;
+    }
+
+    .footer-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-txt{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 991px) {
+    .home{
+        margin-top: 15%;
+    }
+}
+
+.home-nav a, .home-nav ul li, .agent-search-btn button, .agent-list-head p, .agent-location p, .agent-about p, .agent-listing p{
+    font-family: 'Lufga Regular';
+}
+
+.home-nav ul li{
+    color: #B8B8B8;
+}
+
+.home-nav ul li::marker{
+    color: #B8B8B8;
+}
+
+.agent-head h1{
+    font-family: 'Lufga Bold';
+}
+
+.agent-head p, .agent-contact p{
+    font-family: 'Lufga Regular';
+    color: #666666;
+}
+
+.agent-head{
+    border-bottom: 1px solid #B8B8B8;
+}
+
+.agent-contact-head h5, .agent-list-head h3, .property-discription-column-title h5, .agent-listing a, .visit-btn button, .profile-btn button, .footer-column-list h6, .footer-column h6{
+    font-family: 'Lufga SemiBold';
+}
+
+.agent-contact input{
+    border-radius: 10px;
+    border: 1px solid #B8B8B8;
+}
+
+.agent-contact-head h5, .agent-about p{
+    line-height: 1.8;
+}
+
+.agent-contact p, .agent-list-head p, .agent-location p, .property-discription-column-title h5, .agent-listing p, footer p{
+    margin-bottom: -0rem;
+}
+
+.agent-search-btn button, .profile-btn button{
+    border-radius: 10px;
+}
+
+.agent-search-btn button{
+    font-size: 18px;
+}
+
+.agent-list-head p, .property-discription-column-title h5, .agent-about p a, .agent-listing a, .visit-btn button{
+    color: #0E694B;
+}
+
+.property-discription-column-title, .agent{
+    border-bottom: 1px solid #B8B8B8;
+}
+
+.agent-listing i{
+    color: #666666;
+}
+
+.visit-btn button{
+    border: 2px solid #0E694B;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.profile-btn button{
+    font-size: 20px;
+    padding: 15px;
+}
+
+.agent-list{
+    margin-top: 70px;
+}
+
+.scrollbar
+{
+	/* margin-left: 40px; */
+	float: left;
+	height: 3200px;
+    width: 100%;
+	/* width: 220px; */
+	/* background: #F5F5F5; */
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+.force-overflow
+{
+	min-height: 750px;
+}
+
+#style-1::-webkit-scrollbar-track
+{
+	/* -webkit-box-shadow: inset 0 0 6px rgb(223, 220, 220); */
+	/* border-radius: 10px; */
+	background-color: #c9d8d1;
+    border-radius: 10px;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 5px;
+    height: 5px;
+	/* background-color: #F5F5F5; */
+    /* height: 40px; */
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	/* -webkit-box-shadow: inset 0 0 6px rgb(223, 220, 220); */
+	background-color: #0E694B;
+}
+
+footer{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.footer-item{
+    padding-top: 70px;
+    gap: 70px;
+    border-bottom: 1px solid #949494;
+}
+
+.footer-column p, .footer-column-list ul li, .footer-txt p, .footer-txt h6{
+    font-family: 'Lufga Light';
+}
+
+.footer-column-list ul li, .footer-column-list p, .footer-txt p, .footer-txt h6{
+    font-size: 14px;
+}
+
+.footer-column{
+    width: 50%;
+}
+
+.footer-column-list p{
+    width: 70%;
+    line-height: 1.8;
+}
+
+.footer-txt p{
+    width: 85%;
+    line-height: 1.8;
+}
